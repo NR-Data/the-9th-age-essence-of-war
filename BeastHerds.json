@@ -1,0 +1,2311 @@
+{
+  "catalogue": {
+    "name": "BH - Beast Herds",
+    "id": "2a6b-bc45-eb9d-93db",
+    "authorContact": "https://discord.gg/6BzGzXpv",
+    "authorName": "T9A Essence of War",
+    "authorUrl": "https://www.the-ninth-age.com/",
+    "battleScribeVersion": 2.03,
+    "gameSystemId": "37a3-01ac-0a12-1de9",
+    "gameSystemRevision": 1,
+    "library": false,
+    "readme": "From the dark depths of feral forests, from the wide untamed plains, and from every wild place beyond the gaze of civilisation, nature’s savage heart strikes without warning. Feel the ground tremble beneath thunderous hooves, shiver at the howls of the hunt, and know that you are stalked by the Beast Herds.\n\nThe Herds comprise all manner of creatures, appearing like local fauna yet able to fight like men, with origins shrouded in the mists of time. Mighty creatures stride through the forests by their side, spreading terror in their wake. Marked in the womb by shamanic rituals and tribal magics, fueled by the desire to prove themselves worthy of the great stories of their peoples, the Herds view the sedentary nations as little more than a convenient larder and a testing ground for glory.",
+    "revision": 1,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "selectionEntries": [
+      {
+        "name": "Minotaurs",
+        "id": "8cbc-d318-ddf7-5f0e",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "7e54-8f47-a810-808a", "hidden": false, "primary": true, "targetId": "c0d5-5efe-7369-6533"}],
+        "constraints": [
+          {
+            "id": "1153-cb41-230b-09ea",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 3
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 225}],
+        "infoLinks": [
+          {"name": "Fearless", "id": "6e72-8bea-d6aa-8b99", "hidden": false, "targetId": "c423-6399-7fa1-cc7d", "type": "rule"},
+          {"name": "Primal Instinct", "id": "e1f9-3fe9-e3e9-a0d6", "hidden": false, "targetId": "895e-3737-3c2e-f266", "type": "rule"},
+          {"name": "Monstrous Support", "id": "36fc-9ea1-773d-aec4", "hidden": false, "targetId": "b3f5-9ed8-fe66-acad", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Minotaur Def",
+            "id": "0a38-3d96-2bd1-c2f1",
+            "hidden": false,
+            "typeId": "798e-3db5-821c-90fd",
+            "typeName": "B - Defensive",
+            "characteristics": [
+              {"name": "HP", "$text": "3", "typeId": "a71f-8428-6086-f45a"},
+              {"name": "Def", "$text": "3", "typeId": "216a-6cd9-84db-48ed"},
+              {"name": "Res", "$text": "4", "typeId": "3174-ebfd-143a-947c"},
+              {"name": "Arm", "$text": "1", "typeId": "e81f-a9f5-0ea9-20e7"}
+            ]
+          },
+          {
+            "name": "Minotaur Off",
+            "id": "594b-04d8-b0af-4239",
+            "hidden": false,
+            "typeId": "09bf-52af-eb52-368d",
+            "typeName": "C - Offensive",
+            "characteristics": [
+              {"name": "Att", "$text": "3", "typeId": "41f7-2b17-b9cd-90e0"},
+              {"name": "Off", "$text": "4", "typeId": "234c-788c-52cf-9709"},
+              {"name": "Str", "$text": "5", "typeId": "d674-b7ff-4536-4341"},
+              {"name": "AP", "$text": "2", "typeId": "d0d3-a891-a557-9eaa"},
+              {"name": "Agi", "$text": "3", "typeId": "27bf-2665-9a77-c28b"}
+            ]
+          },
+          {
+            "name": "Minotaur",
+            "id": "14a2-ddda-63d8-f915",
+            "hidden": false,
+            "typeId": "c75d-2923-f7aa-e488",
+            "typeName": "A - Global",
+            "characteristics": [
+              {"name": "Adv", "$text": "6\"", "typeId": "340c-e3f3-0416-4dc4"},
+              {"name": "Mar", "$text": "12\"", "typeId": "be03-80e8-aa1b-09e1"},
+              {"name": "Dis", "$text": "7", "typeId": "fb84-0f93-8c4e-322d"},
+              {"name": "Base", "$text": "40×40mm", "typeId": "bd43-4383-1ba3-ccda"}
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Formation",
+            "id": "c416-4b6d-f90f-b918",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "constraints": [
+              {
+                "id": "ef9b-6ffd-922a-e06e",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "67c9-b9fb-fb3e-76e5",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "3×1",
+                "id": "aec9-a503-d83c-b866",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "97da-c138-8198-aee4",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  },
+                  {
+                    "id": "d32b-3a71-1502-055e",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+                "modifiers": [
+                  {
+                    "field": "d32b-3a71-1502-055e",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "aec9-a503-d83c-b866",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "3×2",
+                "id": "0335-a3da-9169-dbe2",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "6563-8f90-8a92-2021",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 225}]
+              },
+              {
+                "name": "2×2",
+                "id": "eba1-2ffe-155b-f9cf",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "1941-a73e-e03c-9e20",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 75}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Cyclops",
+        "id": "d9f4-065d-f68e-80a3",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "New CategoryLink", "id": "fa82-f075-a5df-3134", "hidden": false, "primary": true, "targetId": "4ca0-ba8f-4e4f-f87a"},
+          {"name": "Characters & Support (control)", "id": "d0ee-3851-6651-7687", "hidden": false, "primary": false, "targetId": "64ac-7c06-a54c-6439"}
+        ],
+        "constraints": [
+          {
+            "id": "1775-63a4-27dc-4246",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 2
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 300}],
+        "infoLinks": [
+          {"name": "Fear", "id": "16b4-8fbc-6314-818a", "hidden": false, "targetId": "23e1-d74f-d6d7-9ed6", "type": "rule"},
+          {
+            "name": "Hurl Attack",
+            "id": "0654-a802-189b-667c",
+            "hidden": false,
+            "targetId": "ce80-c7d7-065e-7092",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (4+)"}]
+          },
+          {
+            "name": "Stomp",
+            "id": "099e-09fd-9554-f7a4",
+            "hidden": false,
+            "targetId": "76a1-6beb-376e-cad4",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (D3)"}]
+          },
+          {"name": "Towering", "id": "22a2-0123-69d1-9250", "hidden": false, "targetId": "eac1-fadc-7267-b461", "type": "rule"},
+          {"name": "Fearless", "id": "fd28-5874-ffb6-0269", "hidden": false, "targetId": "c423-6399-7fa1-cc7d", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Cyclops Def",
+            "id": "45ec-953c-e36c-d0c6",
+            "hidden": false,
+            "typeId": "31da-8850-9171-b536",
+            "typeName": "B - Defensive (Aegis)",
+            "characteristics": [
+              {"name": "HP", "$text": "6", "typeId": "56d2-44e5-2da4-9610"},
+              {"name": "Def", "$text": "2", "typeId": "399e-4817-84c7-bbba"},
+              {"name": "Res", "$text": "5", "typeId": "816b-2917-24c2-837e"},
+              {"name": "Arm", "$text": "0", "typeId": "cd38-5e5e-dd67-14a0"},
+              {"name": "Aeg", "$text": "5+", "typeId": "9536-207b-8959-d293"}
+            ]
+          },
+          {
+            "name": "Cyclops Off",
+            "id": "360f-13ff-1339-56c7",
+            "hidden": false,
+            "typeId": "09bf-52af-eb52-368d",
+            "typeName": "C - Offensive",
+            "characteristics": [
+              {"name": "Att", "$text": "5", "typeId": "41f7-2b17-b9cd-90e0"},
+              {"name": "Off", "$text": "2", "typeId": "234c-788c-52cf-9709"},
+              {"name": "Str", "$text": "6", "typeId": "d674-b7ff-4536-4341"},
+              {"name": "AP", "$text": "3", "typeId": "d0d3-a891-a557-9eaa"},
+              {"name": "Agi", "$text": "3", "typeId": "27bf-2665-9a77-c28b"}
+            ]
+          },
+          {
+            "name": "Cyclops",
+            "id": "f6df-542c-0982-f208",
+            "hidden": false,
+            "typeId": "c75d-2923-f7aa-e488",
+            "typeName": "A - Global",
+            "characteristics": [
+              {"name": "Adv", "$text": "7\"", "typeId": "340c-e3f3-0416-4dc4"},
+              {"name": "Mar", "$text": "14\"", "typeId": "be03-80e8-aa1b-09e1"},
+              {"name": "Dis", "$text": "8", "typeId": "fb84-0f93-8c4e-322d"},
+              {"name": "Base", "$text": "50×100mm", "typeId": "bd43-4383-1ba3-ccda"}
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Formation",
+            "id": "aa5f-1827-1d00-d88b",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "constraints": [
+              {
+                "id": "0493-5855-e7a9-d590",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "d30d-5d19-3da1-00e4",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Single Model",
+                "id": "2a9f-7119-3a0a-af15",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "55d7-732e-2c4a-ef9d",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  },
+                  {
+                    "id": "01ee-74a4-9f36-f42e",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Soothsayer",
+        "id": "0955-ae1f-cb2d-ffaa",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "New CategoryLink", "id": "dbcf-0f0a-dc76-f9c7", "hidden": false, "primary": true, "targetId": "7188-7226-8717-07bf"},
+          {"name": "Characters & Support (control)", "id": "409f-d1f1-4be8-5b75", "hidden": false, "primary": false, "targetId": "64ac-7c06-a54c-6439"}
+        ],
+        "constraints": [
+          {
+            "id": "2bff-a2d2-a482-bfe3",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 2
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 125}],
+        "entryLinks": [
+          {
+            "name": "Army General",
+            "id": "ce59-778d-afc2-c491",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "fd22-9438-9ade-492b",
+            "type": "selectionEntry"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Apprentice",
+            "id": "dbca-1721-1d23-cec4",
+            "hidden": false,
+            "targetId": "25cd-80af-77ee-af3a",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "111a-8dd4-a158-6f88",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "0955-ae1f-cb2d-ffaa",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {"name": "Primal Instinct", "id": "3b45-b796-db87-915c", "hidden": false, "targetId": "895e-3737-3c2e-f266", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Soothsayer Def",
+            "id": "2159-5f66-a6f5-f21a",
+            "hidden": false,
+            "typeId": "798e-3db5-821c-90fd",
+            "typeName": "B - Defensive",
+            "characteristics": [
+              {"name": "HP", "$text": "3", "typeId": "a71f-8428-6086-f45a"},
+              {"name": "Def", "$text": "4", "typeId": "216a-6cd9-84db-48ed"},
+              {"name": "Res", "$text": "5", "typeId": "3174-ebfd-143a-947c"},
+              {"name": "Arm", "$text": "0", "typeId": "e81f-a9f5-0ea9-20e7"}
+            ]
+          },
+          {
+            "name": "Soothsayer Off",
+            "id": "f07c-dba7-7f44-6e80",
+            "hidden": false,
+            "typeId": "09bf-52af-eb52-368d",
+            "typeName": "C - Offensive",
+            "characteristics": [
+              {"name": "Att", "$text": "2", "typeId": "41f7-2b17-b9cd-90e0"},
+              {"name": "Off", "$text": "5", "typeId": "234c-788c-52cf-9709"},
+              {"name": "Str", "$text": "3", "typeId": "d674-b7ff-4536-4341"},
+              {"name": "AP", "$text": "0", "typeId": "d0d3-a891-a557-9eaa"},
+              {"name": "Agi", "$text": "3", "typeId": "27bf-2665-9a77-c28b"}
+            ]
+          },
+          {
+            "name": "Soothsayer",
+            "id": "a26c-1574-2915-3383",
+            "hidden": false,
+            "typeId": "c75d-2923-f7aa-e488",
+            "typeName": "A - Global",
+            "characteristics": [
+              {"name": "Adv", "$text": "5\"", "typeId": "340c-e3f3-0416-4dc4"},
+              {"name": "Mar", "$text": "10\"", "typeId": "be03-80e8-aa1b-09e1"},
+              {"name": "Dis", "$text": "8", "typeId": "fb84-0f93-8c4e-322d"},
+              {"name": "Base", "$text": "25×25mm", "typeId": "bd43-4383-1ba3-ccda"}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Special Items",
+            "id": "d525-d329-9c34-11ac",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "defc-1a12-b513-dbc9",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "49d6-c1fa-fdf4-45a1",
+                "field": "9ff9-d361-a4c3-1efa",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 75
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+            "entryLinks": [
+              {
+                "name": "Armour",
+                "id": "9fa6-8572-8851-462f",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "719f-2c2f-38b9-700e",
+                "type": "selectionEntryGroup",
+                "constraints": [
+                  {
+                    "id": "32bd-87fd-9976-d690",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "843d-7fa9-553b-12a0",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "0955-ae1f-cb2d-ffaa",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Armour (mounted)",
+                "id": "ce59-b160-e360-d16f",
+                "collective": false,
+                "hidden": true,
+                "import": true,
+                "targetId": "68db-dc1d-fdef-3f66",
+                "type": "selectionEntryGroup",
+                "constraints": [
+                  {
+                    "id": "d761-111d-3d51-f10b",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": false,
+                    "conditions": [
+                      {
+                        "childId": "843d-7fa9-553b-12a0",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "0955-ae1f-cb2d-ffaa",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Artefact",
+                "id": "2f81-a2f7-a59a-b40a",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "72aa-a8b9-e070-f8e0",
+                "type": "selectionEntryGroup",
+                "constraints": [
+                  {
+                    "id": "3944-250a-8569-9702",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "fd22-9438-9ade-492b",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "0955-ae1f-cb2d-ffaa",
+                        "shared": true,
+                        "type": "notEqualTo",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Artefact (General)",
+                "id": "f4c2-0f28-c337-4d0d",
+                "collective": false,
+                "hidden": true,
+                "import": true,
+                "targetId": "d5c1-3527-9b15-4ad8",
+                "type": "selectionEntryGroup",
+                "constraints": [
+                  {
+                    "id": "daac-a4fe-8b03-c9c0",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": false,
+                    "conditions": [
+                      {
+                        "childId": "fd22-9438-9ade-492b",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "0955-ae1f-cb2d-ffaa",
+                        "shared": true,
+                        "type": "notEqualTo",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Weapons",
+                "id": "aad3-0838-1ab9-6c30",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "c175-8913-37a6-2cc4",
+                "type": "selectionEntryGroup",
+                "constraints": [
+                  {
+                    "id": "2411-c8ff-bfaf-2a33",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Formation",
+            "id": "a252-d86a-55fd-8e2d",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "constraints": [
+              {
+                "id": "03dd-c5c5-7604-d5ad",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "563c-9b9a-65c3-bd2e",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Raiding Chariot",
+                "id": "fb22-5244-b71a-960b",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "deb0-1b2d-1ca5-9387",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 25}],
+                "infoLinks": [{"name": "Raiding Chariot", "id": "6d68-b404-57f8-bf29", "hidden": false, "targetId": "ee8e-0d23-b8de-c41c", "type": "rule"}]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "on Foot",
+                "id": "843d-7fa9-553b-12a0",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "3702-d8ce-4513-2664",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  },
+                  {
+                    "id": "107e-abf4-7cc3-9f6d",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+                "modifiers": [
+                  {
+                    "field": "107e-abf4-7cc3-9f6d",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "843d-7fa9-553b-12a0",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Options",
+            "id": "28c1-7fbe-b9c2-c793",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "selectionEntries": [
+              {
+                "name": "Adept",
+                "id": "111a-8dd4-a158-6f88",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "676f-9dc2-f16d-ff1b",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 75}],
+                "infoLinks": [{"name": "Adept", "id": "9d69-b21e-ff8d-a73e", "hidden": false, "targetId": "a38e-94fa-4640-756d", "type": "rule"}]
+              }
+            ]
+          },
+          {
+            "name": "Path of Magic",
+            "id": "7fed-2ad8-c6d5-a21a",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "constraints": [
+              {
+                "id": "1a83-7233-f988-b98f",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "56b9-6ea9-adcf-ae62",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Shamanism",
+                "id": "797c-c787-eeb7-de65",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "116f-c068-1953-e09b",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+                "infoLinks": [
+                  {"name": "Awaken the Beast", "id": "d026-6a51-b579-619a", "hidden": false, "targetId": "99d6-5fc1-1d10-dad7", "type": "profile"},
+                  {
+                    "name": "Swarm of Insects",
+                    "id": "f732-61b9-9cc5-d29d",
+                    "hidden": true,
+                    "targetId": "116a-cc2b-e27c-a458",
+                    "type": "profile",
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": true,
+                        "conditions": [
+                          {
+                            "childId": "111a-8dd4-a158-6f88",
+                            "field": "selections",
+                            "includeChildForces": true,
+                            "includeChildSelections": true,
+                            "percentValue": false,
+                            "scope": "0955-ae1f-cb2d-ffaa",
+                            "shared": true,
+                            "type": "equalTo",
+                            "value": 0
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Evocation",
+                "id": "57b4-e2d0-d9dc-8d38",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "4c13-9b13-6425-4f9b",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+                "infoLinks": [
+                  {
+                    "name": "Hasten the Hour",
+                    "id": "8cea-1512-65ab-dc22",
+                    "hidden": false,
+                    "targetId": "a17f-cbe5-9212-ade5",
+                    "type": "profile",
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": true,
+                        "conditions": [
+                          {
+                            "childId": "111a-8dd4-a158-6f88",
+                            "field": "selections",
+                            "includeChildForces": true,
+                            "includeChildSelections": true,
+                            "percentValue": false,
+                            "scope": "0955-ae1f-cb2d-ffaa",
+                            "shared": true,
+                            "type": "equalTo",
+                            "value": 0
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {"name": "Spectral Blades", "id": "5b45-5dff-772c-8e6f", "hidden": true, "targetId": "c981-ae22-ab80-6615", "type": "profile"}
+                ]
+              },
+              {
+                "name": "Druidism",
+                "id": "7d14-1f04-3fcd-f87d",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "9a4b-b9ad-17a7-1b9e",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+                "infoLinks": [
+                  {"name": "Healing Waters", "id": "8124-47a2-6730-5c3e", "hidden": false, "targetId": "ecd0-a0c9-f629-1d41", "type": "profile"},
+                  {
+                    "name": "Master of Earth",
+                    "id": "a969-da01-2aeb-cbb4",
+                    "hidden": true,
+                    "targetId": "723b-f1bf-d5a5-7be7",
+                    "type": "profile",
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": true,
+                        "conditions": [
+                          {
+                            "childId": "111a-8dd4-a158-6f88",
+                            "field": "selections",
+                            "includeChildForces": true,
+                            "includeChildSelections": true,
+                            "percentValue": false,
+                            "scope": "0955-ae1f-cb2d-ffaa",
+                            "shared": true,
+                            "type": "equalTo",
+                            "value": 0
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Centaurs",
+        "id": "b23f-32a7-dfb6-7d45",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "6410-d1ce-bb4f-e5db", "hidden": false, "primary": true, "targetId": "c0d5-5efe-7369-6533"}],
+        "constraints": [
+          {
+            "id": "4cee-3c8d-2a9d-ec14",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 2
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 225}],
+        "infoLinks": [
+          {"name": "Primal Instinct", "id": "42e0-cde1-2549-3a83", "hidden": false, "targetId": "895e-3737-3c2e-f266", "type": "rule"},
+          {"name": "Swiftstride", "id": "302d-b6d7-f519-b9b9", "hidden": false, "targetId": "c808-f4ab-79e5-7f92", "type": "rule"},
+          {
+            "name": "Devastating Charge",
+            "id": "5cc8-994a-8ac7-037f",
+            "hidden": false,
+            "targetId": "8cad-a5ad-9750-e7d6",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (+2 Str, +2 AP)"}]
+          },
+          {
+            "name": "Throwing Weapons",
+            "id": "f6e3-4a14-2f1f-d389",
+            "hidden": false,
+            "targetId": "5956-6eac-81c0-64cc",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (5+)"}]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Centaur Def",
+            "id": "59cd-c9d6-1911-68e3",
+            "hidden": false,
+            "typeId": "798e-3db5-821c-90fd",
+            "typeName": "B - Defensive",
+            "characteristics": [
+              {"name": "HP", "$text": "1", "typeId": "a71f-8428-6086-f45a"},
+              {"name": "Def", "$text": "4", "typeId": "216a-6cd9-84db-48ed"},
+              {"name": "Res", "$text": "4", "typeId": "3174-ebfd-143a-947c"},
+              {"name": "Arm", "$text": "2", "typeId": "e81f-a9f5-0ea9-20e7"}
+            ]
+          },
+          {
+            "name": "Centaur Off",
+            "id": "bdf8-16fd-e062-2b01",
+            "hidden": false,
+            "typeId": "09bf-52af-eb52-368d",
+            "typeName": "C - Offensive",
+            "characteristics": [
+              {"name": "Att", "$text": "2", "typeId": "41f7-2b17-b9cd-90e0"},
+              {"name": "Off", "$text": "4", "typeId": "234c-788c-52cf-9709"},
+              {"name": "Str", "$text": "4", "typeId": "d674-b7ff-4536-4341"},
+              {"name": "AP", "$text": "1", "typeId": "d0d3-a891-a557-9eaa"},
+              {"name": "Agi", "$text": "3", "typeId": "27bf-2665-9a77-c28b"}
+            ]
+          },
+          {
+            "name": "Centaur",
+            "id": "0afd-8b8a-1167-2922",
+            "hidden": false,
+            "typeId": "c75d-2923-f7aa-e488",
+            "typeName": "A - Global",
+            "characteristics": [
+              {"name": "Adv", "$text": "8\"", "typeId": "340c-e3f3-0416-4dc4"},
+              {"name": "Mar", "$text": "16\"", "typeId": "be03-80e8-aa1b-09e1"},
+              {"name": "Dis", "$text": "7", "typeId": "fb84-0f93-8c4e-322d"},
+              {"name": "Base", "$text": "25×50mm", "typeId": "bd43-4383-1ba3-ccda"}
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Formation",
+            "id": "19e5-773e-d27d-d30b",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "constraints": [
+              {
+                "id": "1d08-99ff-4279-c9fd",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "98c0-bb56-f5aa-747c",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "5×1",
+                "id": "9c80-4e20-6500-e088",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "3226-00f4-447d-e821",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  },
+                  {
+                    "id": "13cf-2232-59ab-cccf",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+                "modifiers": [
+                  {
+                    "field": "13cf-2232-59ab-cccf",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "9c80-4e20-6500-e088",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "5×2",
+                "id": "ada6-e924-6000-89bd",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "a085-a6e6-cd8b-10f8",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 175}]
+              },
+              {
+                "name": "4×2",
+                "id": "3ce6-2410-76c7-0be9",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "9f6b-33ae-5be7-8b40",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 100}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Wildhorn Herd",
+        "id": "88bc-a0af-ec23-0b15",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "88b8-19fa-62e1-274e", "hidden": false, "primary": true, "targetId": "8ff1-051e-9cdc-a9ae"}],
+        "constraints": [
+          {
+            "id": "27cb-dfc2-9e4a-ed73",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 3
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 150}],
+        "infoLinks": [
+          {"name": "Primal Instinct", "id": "5fb2-3178-ac4c-a882", "hidden": false, "targetId": "895e-3737-3c2e-f266", "type": "rule"},
+          {
+            "name": "Throwing Weapons",
+            "id": "c6ec-2602-0163-1c12",
+            "hidden": false,
+            "targetId": "5956-6eac-81c0-64cc",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (5+)"}]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Wildhorn Def",
+            "id": "18d4-cc2e-34a7-8759",
+            "hidden": false,
+            "typeId": "798e-3db5-821c-90fd",
+            "typeName": "B - Defensive",
+            "characteristics": [
+              {"name": "HP", "$text": "1", "typeId": "a71f-8428-6086-f45a"},
+              {"name": "Def", "$text": "4", "typeId": "216a-6cd9-84db-48ed"},
+              {"name": "Res", "$text": "4", "typeId": "3174-ebfd-143a-947c"},
+              {"name": "Arm", "$text": "0", "typeId": "e81f-a9f5-0ea9-20e7"}
+            ]
+          },
+          {
+            "name": "Wildhorn Off",
+            "id": "131e-7b77-0cba-1a67",
+            "hidden": false,
+            "typeId": "09bf-52af-eb52-368d",
+            "typeName": "C - Offensive",
+            "characteristics": [
+              {"name": "Att", "$text": "2", "typeId": "41f7-2b17-b9cd-90e0"},
+              {"name": "Off", "$text": "5", "typeId": "234c-788c-52cf-9709"},
+              {"name": "Str", "$text": "3", "typeId": "d674-b7ff-4536-4341"},
+              {"name": "AP", "$text": "0", "typeId": "d0d3-a891-a557-9eaa"},
+              {"name": "Agi", "$text": "3", "typeId": "27bf-2665-9a77-c28b"}
+            ]
+          },
+          {
+            "name": "Wildhorn ",
+            "id": "94a3-1feb-ab7b-7a23",
+            "hidden": false,
+            "typeId": "c75d-2923-f7aa-e488",
+            "typeName": "A - Global",
+            "characteristics": [
+              {"name": "Adv", "$text": "5\"", "typeId": "340c-e3f3-0416-4dc4"},
+              {"name": "Mar", "$text": "10\"", "typeId": "be03-80e8-aa1b-09e1"},
+              {"name": "Dis", "$text": "7", "typeId": "fb84-0f93-8c4e-322d"},
+              {"name": "Base", "$text": "25×25mm", "typeId": "bd43-4383-1ba3-ccda"}
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Formation",
+            "id": "97ec-0e60-141e-b637",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "constraints": [
+              {
+                "id": "64e1-2e11-2704-39d7",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "8c10-b064-da3d-a2e2",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "6×4",
+                "id": "c6a0-edd3-fa4a-1194",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "6174-8c60-9612-cb4b",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 100}]
+              },
+              {
+                "name": "5×4",
+                "id": "a961-f733-46d6-d2d9",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "ba99-bf7d-9063-80b3",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 50}]
+              },
+              {
+                "name": "5×3",
+                "id": "0f48-dec3-eae0-d103",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "60fe-e3cb-31ee-08db",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  },
+                  {
+                    "id": "4dbe-b7d4-b1da-62b1",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+                "modifiers": [
+                  {
+                    "field": "4dbe-b7d4-b1da-62b1",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "0f48-dec3-eae0-d103",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Minotaur Chieftain",
+        "id": "d344-d6b6-f768-5ddb",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "New CategoryLink", "id": "b785-58df-9e5b-5da2", "hidden": false, "primary": true, "targetId": "7188-7226-8717-07bf"},
+          {"name": "Characters & Support (control)", "id": "6319-46a1-dbe4-4212", "hidden": false, "primary": false, "targetId": "64ac-7c06-a54c-6439"}
+        ],
+        "constraints": [
+          {
+            "id": "8e97-858b-70ff-96e7",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 2
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 225}],
+        "entryLinks": [
+          {
+            "name": "Army General",
+            "id": "85b1-7d5f-2a70-c13b",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "fd22-9438-9ade-492b",
+            "type": "selectionEntry"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Impact",
+            "id": "d00b-034d-4ce5-448a",
+            "hidden": false,
+            "targetId": "a6c4-2a00-d50b-8dbc",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (D3)"}]
+          },
+          {"name": "Primal Instinct", "id": "113a-8161-a296-d17d", "hidden": false, "targetId": "895e-3737-3c2e-f266", "type": "rule"},
+          {"name": "Fearless", "id": "b522-c449-0078-d627", "hidden": false, "targetId": "c423-6399-7fa1-cc7d", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Minotaur Chieftain Def",
+            "id": "9b94-13e8-e96d-1cf0",
+            "hidden": false,
+            "typeId": "798e-3db5-821c-90fd",
+            "typeName": "B - Defensive",
+            "characteristics": [
+              {"name": "HP", "$text": "4", "typeId": "a71f-8428-6086-f45a"},
+              {"name": "Def", "$text": "4", "typeId": "216a-6cd9-84db-48ed"},
+              {"name": "Res", "$text": "5", "typeId": "3174-ebfd-143a-947c"},
+              {"name": "Arm", "$text": "2", "typeId": "e81f-a9f5-0ea9-20e7"}
+            ]
+          },
+          {
+            "name": "Minotaur Chieftain Off",
+            "id": "d94f-2e02-2e96-b308",
+            "hidden": false,
+            "typeId": "09bf-52af-eb52-368d",
+            "typeName": "C - Offensive",
+            "characteristics": [
+              {"name": "Att", "$text": "5", "typeId": "41f7-2b17-b9cd-90e0"},
+              {"name": "Off", "$text": "6", "typeId": "234c-788c-52cf-9709"},
+              {"name": "Str", "$text": "5", "typeId": "d674-b7ff-4536-4341"},
+              {"name": "AP", "$text": "2", "typeId": "d0d3-a891-a557-9eaa"},
+              {"name": "Agi", "$text": "4", "typeId": "27bf-2665-9a77-c28b"}
+            ]
+          },
+          {
+            "name": "Minotaur Chieftain",
+            "id": "c907-6bb2-ef54-68d9",
+            "hidden": false,
+            "typeId": "c75d-2923-f7aa-e488",
+            "typeName": "A - Global",
+            "characteristics": [
+              {"name": "Adv", "$text": "6\"", "typeId": "340c-e3f3-0416-4dc4"},
+              {"name": "Mar", "$text": "12\"", "typeId": "be03-80e8-aa1b-09e1"},
+              {"name": "Dis", "$text": "8", "typeId": "fb84-0f93-8c4e-322d"},
+              {"name": "Base", "$text": "40×40mm", "typeId": "bd43-4383-1ba3-ccda"}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Special Items",
+            "id": "14d3-a416-ff21-8b18",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "e4c1-70fd-563a-88d3",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "c42e-3526-10ed-5559",
+                "field": "9ff9-d361-a4c3-1efa",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 75
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+            "entryLinks": [
+              {
+                "name": "Armour",
+                "id": "9a1e-56df-7359-14d8",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "719f-2c2f-38b9-700e",
+                "type": "selectionEntryGroup",
+                "constraints": [
+                  {
+                    "id": "45bf-8e21-a9e1-ac3e",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "name": "Artefact",
+                "id": "519d-86c6-58ec-aa5f",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "72aa-a8b9-e070-f8e0",
+                "type": "selectionEntryGroup",
+                "constraints": [
+                  {
+                    "id": "fabd-06df-418f-79c1",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "fd22-9438-9ade-492b",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "d344-d6b6-f768-5ddb",
+                        "shared": true,
+                        "type": "notEqualTo",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Artefact (General)",
+                "id": "82c7-83b3-55d0-c6e9",
+                "collective": false,
+                "hidden": true,
+                "import": true,
+                "targetId": "d5c1-3527-9b15-4ad8",
+                "type": "selectionEntryGroup",
+                "constraints": [
+                  {
+                    "id": "a42d-30b7-df4b-31b4",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": false,
+                    "conditions": [
+                      {
+                        "childId": "fd22-9438-9ade-492b",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "d344-d6b6-f768-5ddb",
+                        "shared": true,
+                        "type": "notEqualTo",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Weapons",
+                "id": "5ceb-0119-44d8-c9b9",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "c175-8913-37a6-2cc4",
+                "type": "selectionEntryGroup",
+                "constraints": [
+                  {
+                    "id": "5117-086c-4199-9b75",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Formation",
+            "id": "1a6f-1453-671b-0c46",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "constraints": [
+              {
+                "id": "ce28-2996-2759-20e4",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "cb54-90fc-6a76-bddd",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "on Foot",
+                "id": "4d6c-7746-de9c-457f",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "8875-aad5-9979-17db",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  },
+                  {
+                    "id": "d8e5-e534-9090-ea71",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+                "modifiers": [
+                  {
+                    "field": "d8e5-e534-9090-ea71",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "4d6c-7746-de9c-457f",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Black Wing",
+                "id": "42b4-080f-8821-6958",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "fb88-af16-6deb-7807",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  },
+                  {
+                    "id": "03e4-2077-9bf3-487b",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 50}],
+                "infoLinks": [
+                  {"name": "Black Wing", "id": "78e8-dff9-b77c-a6e9", "hidden": false, "targetId": "0d69-dabd-ff14-eab3", "type": "rule"},
+                  {"name": "Black Wing Totem", "id": "035c-4ff8-5f22-3e1a", "hidden": false, "targetId": "3aa7-a9a4-252f-523b", "type": "profile"},
+                  {"name": "Conclave", "id": "6364-8fb6-f424-943e", "hidden": false, "targetId": "9706-fcd6-4b1a-b140", "type": "rule"}
+                ]
+              },
+              {
+                "name": "Blooded Horn",
+                "id": "4868-64d2-9dc8-d100",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "56ef-0488-6469-59d9",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  },
+                  {
+                    "id": "273b-3723-c273-0207",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 50}],
+                "infoLinks": [
+                  {"name": "Blooded Horn", "id": "0627-2170-79f6-9d9c", "hidden": false, "targetId": "182c-1302-5cff-1ee6", "type": "rule"},
+                  {"name": "Blooded Horn Totem", "id": "adf8-f5d9-aae7-99d6", "hidden": false, "targetId": "6c6a-09bc-38dd-adc0", "type": "profile"},
+                  {"name": "Conclave", "id": "1dcc-5bdd-07e3-ec62", "hidden": false, "targetId": "9706-fcd6-4b1a-b140", "type": "rule"}
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mongrel Herd",
+        "id": "6362-6449-3c73-acf8",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "8fa5-7371-a3bc-a9c8", "hidden": false, "primary": true, "targetId": "8ff1-051e-9cdc-a9ae"}],
+        "constraints": [
+          {
+            "id": "461a-4b36-a13d-bbe0",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 3
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 125}],
+        "infoLinks": [
+          {"name": "Primal Instinct", "id": "6329-3d29-de63-fe7d", "hidden": false, "targetId": "895e-3737-3c2e-f266", "type": "rule"},
+          {"name": "Fight in Extra Rank", "id": "d9d9-a18e-733d-9685", "hidden": false, "targetId": "ebf7-c826-0089-eb30", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Mongrel Def",
+            "id": "18cf-993d-b088-8c26",
+            "hidden": false,
+            "typeId": "798e-3db5-821c-90fd",
+            "typeName": "B - Defensive",
+            "characteristics": [
+              {"name": "HP", "$text": "1", "typeId": "a71f-8428-6086-f45a"},
+              {"name": "Def", "$text": "3", "typeId": "216a-6cd9-84db-48ed"},
+              {"name": "Res", "$text": "3", "typeId": "3174-ebfd-143a-947c"},
+              {"name": "Arm", "$text": "1", "typeId": "e81f-a9f5-0ea9-20e7"}
+            ]
+          },
+          {
+            "name": "Mongrel Off",
+            "id": "4a81-a80d-b92a-4e95",
+            "hidden": false,
+            "typeId": "09bf-52af-eb52-368d",
+            "typeName": "C - Offensive",
+            "characteristics": [
+              {"name": "Att", "$text": "1", "typeId": "41f7-2b17-b9cd-90e0"},
+              {"name": "Off", "$text": "3", "typeId": "234c-788c-52cf-9709"},
+              {"name": "Str", "$text": "3", "typeId": "d674-b7ff-4536-4341"},
+              {"name": "AP", "$text": "1", "typeId": "d0d3-a891-a557-9eaa"},
+              {"name": "Agi", "$text": "3", "typeId": "27bf-2665-9a77-c28b"}
+            ]
+          },
+          {
+            "name": "Mongrel",
+            "id": "397b-4437-ce75-c79e",
+            "hidden": false,
+            "typeId": "c75d-2923-f7aa-e488",
+            "typeName": "A - Global",
+            "characteristics": [
+              {"name": "Adv", "$text": "5\"", "typeId": "340c-e3f3-0416-4dc4"},
+              {"name": "Mar", "$text": "10\"", "typeId": "be03-80e8-aa1b-09e1"},
+              {"name": "Dis", "$text": "6", "typeId": "fb84-0f93-8c4e-322d"},
+              {"name": "Base", "$text": "20×20mm", "typeId": "bd43-4383-1ba3-ccda"}
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Formation",
+            "id": "30e7-5be1-7dae-980a",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "constraints": [
+              {
+                "id": "a11a-9bb7-d35c-177c",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "8793-0529-519c-fe5a",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "7×5",
+                "id": "8dc8-c3dd-55ab-9b76",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "1ba7-a5e4-351e-0062",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 150}]
+              },
+              {
+                "name": "5×5",
+                "id": "1f88-332f-c987-a80e",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "2b53-596e-b302-4969",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 100}]
+              },
+              {
+                "name": "5×3",
+                "id": "4f76-aba6-2b45-1c19",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "4a5d-05c6-940e-26e0",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  },
+                  {
+                    "id": "4da9-6c35-cc37-3d9d",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+                "modifiers": [
+                  {
+                    "field": "4da9-6c35-cc37-3d9d",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "4f76-aba6-2b45-1c19",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mongrel Raiders",
+        "id": "1100-d8fd-71fb-7955",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "866f-001a-9a3e-d5ff", "hidden": false, "primary": true, "targetId": "8ff1-051e-9cdc-a9ae"}],
+        "constraints": [
+          {
+            "id": "5695-fc59-eec4-2605",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 2
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 100}],
+        "infoLinks": [
+          {"name": "Primal Instinct", "id": "bfe2-5a07-a72a-452e", "hidden": false, "targetId": "895e-3737-3c2e-f266", "type": "rule"},
+          {
+            "name": "Bow",
+            "id": "21b7-02c2-bbec-2bb7",
+            "hidden": false,
+            "targetId": "f4f0-93cd-ef82-4bbf",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (4+)"}]
+          },
+          {"name": "Light Troops", "id": "00e2-7d8d-5b7c-ae98", "hidden": false, "targetId": "9d1f-e0c0-066b-3ccb", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Mongrel Raider Def",
+            "id": "86f4-c9b8-9d17-f45b",
+            "hidden": false,
+            "typeId": "798e-3db5-821c-90fd",
+            "typeName": "B - Defensive",
+            "characteristics": [
+              {"name": "HP", "$text": "1", "typeId": "a71f-8428-6086-f45a"},
+              {"name": "Def", "$text": "3", "typeId": "216a-6cd9-84db-48ed"},
+              {"name": "Res", "$text": "3", "typeId": "3174-ebfd-143a-947c"},
+              {"name": "Arm", "$text": "0", "typeId": "e81f-a9f5-0ea9-20e7"}
+            ]
+          },
+          {
+            "name": "Mongrel Raider Off",
+            "id": "dd18-b88c-43a3-ac36",
+            "hidden": false,
+            "typeId": "09bf-52af-eb52-368d",
+            "typeName": "C - Offensive",
+            "characteristics": [
+              {"name": "Att", "$text": "1", "typeId": "41f7-2b17-b9cd-90e0"},
+              {"name": "Off", "$text": "3", "typeId": "234c-788c-52cf-9709"},
+              {"name": "Str", "$text": "3", "typeId": "d674-b7ff-4536-4341"},
+              {"name": "AP", "$text": "0", "typeId": "d0d3-a891-a557-9eaa"},
+              {"name": "Agi", "$text": "3", "typeId": "27bf-2665-9a77-c28b"}
+            ]
+          },
+          {
+            "name": "Mongrel Raider ",
+            "id": "9d62-e99c-464a-7cae",
+            "hidden": false,
+            "typeId": "c75d-2923-f7aa-e488",
+            "typeName": "A - Global",
+            "characteristics": [
+              {"name": "Adv", "$text": "5\"", "typeId": "340c-e3f3-0416-4dc4"},
+              {"name": "Mar", "$text": "10\"", "typeId": "be03-80e8-aa1b-09e1"},
+              {"name": "Dis", "$text": "6", "typeId": "fb84-0f93-8c4e-322d"},
+              {"name": "Base", "$text": "20×20mm", "typeId": "bd43-4383-1ba3-ccda"}
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Formation",
+            "id": "cb5d-b822-6e40-708c",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "constraints": [
+              {
+                "id": "2bae-608c-1994-9252",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "4ff8-60f7-e4ad-ad89",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "5×2",
+                "id": "8b09-6459-a478-8071",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "9600-6f8e-5eaf-1426",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  },
+                  {
+                    "id": "673f-c909-b881-f933",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+                "modifiers": [
+                  {
+                    "field": "673f-c909-b881-f933",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "8b09-6459-a478-8071",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "6×3",
+                "id": "2e94-e16e-9908-906f",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "8a5d-1243-088d-61dd",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 75}]
+              },
+              {
+                "name": "5×3",
+                "id": "fc18-7236-f074-c75d",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "990a-c4b8-2242-7a67",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 50}]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sharedRules": [
+      {"name": "Bow", "id": "f4f0-93cd-ef82-4bbf", "description": "Shots 1, Range 24″, Str 3, AP 0. First 3 ranks shoot.", "hidden": false},
+      {"name": "Hurl Attack", "id": "ce80-c7d7-065e-7092", "description": "Shots 1, Range 36″, Area Attack (12).", "hidden": false},
+      {
+        "name": "Throwing Weapons",
+        "id": "5956-6eac-81c0-64cc",
+        "description": "Shots 2, Range 8″, Str and AP as User, no Aim modifier for Long Range nor Moving and Shooting.",
+        "hidden": false
+      },
+      {
+        "name": "Primal Instinct",
+        "id": "895e-3737-3c2e-f266",
+        "description": "At the start of each Round of Combat, units with one or more models with this rule must take a Discipline Test. If the test is passed, all models must re-roll failed To-Hit rolls during this Round of Combat.",
+        "hidden": false
+      },
+      {"name": "Black Wing", "id": "0d69-dabd-ff14-eab3", "description": "The model is a Conclave (Black Wing Totem).", "hidden": false},
+      {"name": "Blooded Horn", "id": "182c-1302-5cff-1ee6", "description": "The model is a Conclave (Blooded Horn Totem).", "hidden": false},
+      {"name": "Raiding Chariot", "id": "ee8e-0d23-b8de-c41c", "description": "The model is mounted (see Bestiary).", "hidden": false}
+    ]
+  }
+}
