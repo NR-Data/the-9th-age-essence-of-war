@@ -1,0 +1,3736 @@
+{
+  "gameSystem": {
+    "name": "T9A: Essence of War",
+    "id": "37a3-01ac-0a12-1de9",
+    "authorContact": "https://discord.gg/6BzGzXpv",
+    "authorName": "The Essence of War team",
+    "authorUrl": "https://www.the-ninth-age.com/",
+    "battleScribeVersion": 2.03,
+    "readme": "The 9th Age: Essence of War is a tabletop wargame in which two (or more!) forces clash in an exciting struggle for glory or survival.\n\nEach force is composed of various foot soldiers, archers, mounted knights, spellcasters or inspiring heroes. The game takes place on a tabletop battlefield and uses six-sided dice to resolve different actions such as striking a foe in combat, protecting your own from harm or fleeing from a lost cause. \n\nThe 9th Age: Essence of War is designed to be both an introductory system where new wargamers can learn the mechanics of T9A, and a streamlined ruleset where experienced players can enjoy exciting, tactical games of ranks and files combat in as little as 60–90 minutes per game.\n\nDigital versions are available, be it through Tabletop Simulator's dedicated mods, Universal Battle 2 or Warhall.",
+    "revision": 1,
+    "type": "gameSystem",
+    "xmlns": "http://www.battlescribe.net/schema/gameSystemSchema",
+    "categoryEntries": [
+      {"name": "Characters", "id": "7188-7226-8717-07bf", "hidden": false},
+      {"name": "Core", "id": "8ff1-051e-9cdc-a9ae", "hidden": false},
+      {"name": "Special", "id": "c0d5-5efe-7369-6533", "hidden": false},
+      {"name": "Support", "id": "4ca0-ba8f-4e4f-f87a", "hidden": false},
+      {"name": "Characters & Support", "id": "64ac-7c06-a54c-6439", "hidden": false}
+    ],
+    "costTypes": [{"name": "pts", "id": "9ff9-d361-a4c3-1efa", "defaultCostLimit": -1, "hidden": false}],
+    "forceEntries": [
+      {
+        "name": "Armylist",
+        "id": "9b31-eaca-73bf-c9da",
+        "hidden": false,
+        "categoryLinks": [
+          {"name": "Characters", "id": "925b-2c94-3bf3-a4b2", "hidden": false, "primary": false, "targetId": "7188-7226-8717-07bf"},
+          {
+            "name": "Core",
+            "id": "e22f-2bf4-e1a0-2749",
+            "hidden": false,
+            "primary": false,
+            "targetId": "8ff1-051e-9cdc-a9ae",
+            "constraints": [
+              {
+                "id": "33e7-3c81-0111-922f",
+                "field": "limit::9ff9-d361-a4c3-1efa",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "min",
+                "value": 25
+              }
+            ]
+          },
+          {"name": "Special", "id": "0d4a-7bbe-4aaa-542b", "hidden": false, "primary": false, "targetId": "c0d5-5efe-7369-6533"},
+          {"name": "Support", "id": "212f-ee01-56ec-f908", "hidden": false, "primary": false, "targetId": "4ca0-ba8f-4e4f-f87a"},
+          {
+            "name": "Characters & Support",
+            "id": "be56-26ba-af9c-2610",
+            "hidden": false,
+            "primary": false,
+            "targetId": "64ac-7c06-a54c-6439",
+            "constraints": [
+              {
+                "id": "c9cd-a5ca-1dc6-6610",
+                "field": "limit::9ff9-d361-a4c3-1efa",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 50
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "profileTypes": [
+      {
+        "name": "A - Global",
+        "id": "c75d-2923-f7aa-e488",
+        "characteristicTypes": [
+          {"name": "Adv", "id": "340c-e3f3-0416-4dc4"},
+          {"name": "Mar", "id": "be03-80e8-aa1b-09e1"},
+          {"name": "Dis", "id": "fb84-0f93-8c4e-322d"},
+          {"name": "Base", "id": "bd43-4383-1ba3-ccda"}
+        ]
+      },
+      {
+        "name": "B - Defensive",
+        "id": "798e-3db5-821c-90fd",
+        "characteristicTypes": [
+          {"name": "HP", "id": "a71f-8428-6086-f45a"},
+          {"name": "Def", "id": "216a-6cd9-84db-48ed"},
+          {"name": "Res", "id": "3174-ebfd-143a-947c"},
+          {"name": "Arm", "id": "e81f-a9f5-0ea9-20e7"}
+        ]
+      },
+      {
+        "name": "C - Offensive",
+        "id": "09bf-52af-eb52-368d",
+        "characteristicTypes": [
+          {"name": "Att", "id": "41f7-2b17-b9cd-90e0"},
+          {"name": "Off", "id": "234c-788c-52cf-9709"},
+          {"name": "Str", "id": "d674-b7ff-4536-4341"},
+          {"name": "AP", "id": "d0d3-a891-a557-9eaa"},
+          {"name": "Agi", "id": "27bf-2665-9a77-c28b"}
+        ]
+      },
+      {
+        "name": "Mount",
+        "id": "c49b-bd4f-a454-f1a6",
+        "characteristicTypes": [
+          {"name": "Adv", "id": "b855-bb41-8717-647b"},
+          {"name": "Mar", "id": "f815-a491-49bc-2827"},
+          {"name": "HP", "id": "06be-3bca-2fc5-9424"},
+          {"name": "Res", "id": "77a4-2018-c32f-c060"},
+          {"name": "Arm", "id": "613e-0d60-ad3b-31b5"},
+          {"name": "Base", "id": "4775-c7ad-7fc1-9380"}
+        ]
+      },
+      {
+        "name": "Mount (Aegis)",
+        "id": "f27d-646c-ed58-71eb",
+        "characteristicTypes": [
+          {"name": "Adv", "id": "d531-8eba-2abe-8566"},
+          {"name": "Mar", "id": "f5f4-5160-4a58-b45c"},
+          {"name": "HP", "id": "acf2-e098-7475-3677"},
+          {"name": "Res", "id": "119c-aa19-b583-81d9"},
+          {"name": "Aeg", "id": "ce60-2469-7eea-e636"},
+          {"name": "Base", "id": "159c-ec76-8ab6-5fae"}
+        ]
+      },
+      {
+        "name": "B - Defensive (Aegis)",
+        "id": "31da-8850-9171-b536",
+        "characteristicTypes": [
+          {"name": "HP", "id": "56d2-44e5-2da4-9610"},
+          {"name": "Def", "id": "399e-4817-84c7-bbba"},
+          {"name": "Res", "id": "816b-2917-24c2-837e"},
+          {"name": "Arm", "id": "cd38-5e5e-dd67-14a0"},
+          {"name": "Aeg", "id": "9536-207b-8959-d293"}
+        ]
+      },
+      {
+        "name": "Spells",
+        "id": "d428-3d01-f701-8beb",
+        "characteristicTypes": [{"name": "Casting Value", "id": "ac35-92d2-bc9d-f06f"}, {"name": "Effect", "id": "c802-046d-42b2-b2f6"}]
+      },
+      {
+        "name": "A - Global (Resurrect)",
+        "id": "214c-1bd9-8ed2-cc3c",
+        "characteristicTypes": [
+          {"name": "Adv", "id": "2107-6036-660d-1e94"},
+          {"name": "Mar", "id": "3510-be75-0e82-69c3"},
+          {"name": "Dis", "id": "1f93-f9a2-c6e0-1ffb"},
+          {"name": "Rsr", "id": "50fc-3a30-8498-1111"},
+          {"name": "Base", "id": "6185-8b2b-3a2f-2f63"}
+        ]
+      },
+      {"name": "Special Items", "id": "0cf5-b50f-e349-3251", "characteristicTypes": [{"name": "Description", "id": "b20c-7835-3b33-78a6"}]},
+      {
+        "name": "Mount (Arm & Aegis)",
+        "id": "3f62-0113-4c7a-fc00",
+        "characteristicTypes": [
+          {"name": "Adv", "id": "b4a1-ee24-3419-4b72"},
+          {"name": "Mar", "id": "925a-830a-1e7e-74a6"},
+          {"name": "HP", "id": "02cd-0ccb-29b0-fc77"},
+          {"name": "Arm", "id": "76b4-7800-8256-a83b"},
+          {"name": "Aeg", "id": "cf74-5268-da60-e7e1"},
+          {"name": "Base", "id": "7321-499e-04ba-2e4b"}
+        ]
+      }
+    ],
+    "publications": [
+      {"name": "Alchemy", "id": "4610-c10b-2170-8176"},
+      {"name": "Battle Runes", "id": "aa08-98af-8084-fa14"},
+      {"name": "Divination", "id": "be8d-d36e-68c5-4d0c"},
+      {"name": "Thaumaturgy", "id": "06cd-302c-677f-1d3a"},
+      {"name": "Evocation", "id": "7b49-88ab-0765-ad93"},
+      {"name": "Occultism", "id": "86b1-5f2c-1b57-1d16"},
+      {"name": "Shamanism", "id": "7c51-f505-c212-9866"},
+      {"name": "Druidism", "id": "51f2-3203-d1a3-a2b7"},
+      {"name": "Cosmology", "id": "95f6-f688-3d9f-b47f"},
+      {"name": "Witchcraft", "id": "763f-8a78-64de-c402"},
+      {"name": "Army Specific", "id": "34d8-31db-29f5-1420"},
+      {"name": "Pyromancy", "id": "7e39-5ada-999a-d814"},
+      {"name": "Enchanted Weapon", "id": "d8b4-36c3-74f3-30d6"},
+      {"name": "Enchanted Armour", "id": "1823-5e13-6dcd-d055"},
+      {"name": "Artefact", "id": "ca59-c9fe-69eb-6e8a"}
+    ],
+    "sharedProfiles": [
+      {
+        "name": "Word of Iron",
+        "id": "6d10-dbbd-3f76-20e9",
+        "hidden": false,
+        "publicationId": "4610-c10b-2170-8176",
+        "typeId": "d428-3d01-f701-8beb",
+        "typeName": "Spells",
+        "characteristics": [
+          {"name": "Casting Value", "$text": "5+", "typeId": "ac35-92d2-bc9d-f06f"},
+          {
+            "name": "Effect",
+            "$text": "Choose a friendly unit within 24″ of the caster. The chosen unit gains +1 Armour. The effects last until the start of your next Magic Phase.",
+            "typeId": "c802-046d-42b2-b2f6"
+          }
+        ]
+      },
+      {
+        "name": "Silver Spike",
+        "id": "b481-b16f-8809-598d",
+        "hidden": false,
+        "publicationId": "4610-c10b-2170-8176",
+        "typeId": "d428-3d01-f701-8beb",
+        "typeName": "Spells",
+        "characteristics": [
+          {"name": "Casting Value", "$text": "5+", "typeId": "ac35-92d2-bc9d-f06f"},
+          {
+            "name": "Effect",
+            "$text": "Choose an enemy unit within 18″ and within Line of Sight of the caster. Neither the caster nor the target may be Engaged in Combat. The chosen unit suffers 1 Hit with Str 6, AP 10 and Multiple Wounds (2).",
+            "typeId": "c802-046d-42b2-b2f6"
+          }
+        ]
+      },
+      {
+        "name": "Molten Copper",
+        "id": "b1f8-9e99-d718-3ea8",
+        "hidden": false,
+        "publicationId": "4610-c10b-2170-8176",
+        "typeId": "d428-3d01-f701-8beb",
+        "typeName": "Spells",
+        "characteristics": [
+          {"name": "Casting Value", "$text": "9+", "typeId": "ac35-92d2-bc9d-f06f"},
+          {
+            "name": "Effect",
+            "$text": "Choose an enemy unit within 24″ and within Line of Sight of the caster. Neither the caster nor the target may be Engaged in Combat. The chosen unit suffers 2D3 Hits with Str 1+X and AP 4, where X is equal to the chosen unit’s Armour and has a minimum value of 2.",
+            "typeId": "c802-046d-42b2-b2f6"
+          }
+        ]
+      },
+      {
+        "name": "Know Thine Enemy",
+        "id": "0718-5078-e34d-a5c8",
+        "hidden": false,
+        "publicationId": "be8d-d36e-68c5-4d0c",
+        "typeId": "d428-3d01-f701-8beb",
+        "typeName": "Spells",
+        "characteristics": [
+          {"name": "Casting Value", "$text": "5+", "typeId": "ac35-92d2-bc9d-f06f"},
+          {
+            "name": "Effect",
+            "$text": "Choose a friendly unit within 18″ of the caster. The chosen unit gains +2 Off and +2 Def. The effects last until the start of your next Magic Phase.",
+            "typeId": "c802-046d-42b2-b2f6"
+          }
+        ]
+      },
+      {
+        "name": "Fate’s Judgement",
+        "id": "594b-2614-8b6f-d51a",
+        "hidden": false,
+        "publicationId": "be8d-d36e-68c5-4d0c",
+        "typeId": "d428-3d01-f701-8beb",
+        "typeName": "Spells",
+        "characteristics": [
+          {"name": "Casting Value", "$text": "5+", "typeId": "ac35-92d2-bc9d-f06f"},
+          {
+            "name": "Effect",
+            "$text": "Choose an enemy unit within 18″ and within Line of Sight of the caster. Neither the caster nor the target may be Engaged in Combat. The chosen unit suffers D3 Hits that wound automatically with AP 0.",
+            "typeId": "c802-046d-42b2-b2f6"
+          }
+        ]
+      },
+      {
+        "name": "Scrying",
+        "id": "2d70-c694-bb15-8ff8",
+        "hidden": false,
+        "publicationId": "be8d-d36e-68c5-4d0c",
+        "typeId": "d428-3d01-f701-8beb",
+        "typeName": "Spells",
+        "characteristics": [
+          {"name": "Casting Value", "$text": "{7+} [10+] (Choose casting value before rolling to cast)", "typeId": "ac35-92d2-bc9d-f06f"},
+          {
+            "name": "Effect",
+            "$text": "Target {a friendly unit within 18″} [all friendly units within 6″] of the caster. Melee and Shooting Attacks against the target unit suffer a -1 To-Hit penalty. The effects last until the start of your next Magic Phase.",
+            "typeId": "c802-046d-42b2-b2f6"
+          }
+        ]
+      },
+      {
+        "name": "Altered Sight",
+        "id": "5201-06ba-c8d9-76c4",
+        "hidden": false,
+        "publicationId": "95f6-f688-3d9f-b47f",
+        "typeId": "d428-3d01-f701-8beb",
+        "typeName": "Spells",
+        "characteristics": [
+          {"name": "Casting Value", "$text": "5+", "typeId": "ac35-92d2-bc9d-f06f"},
+          {
+            "name": "Effect",
+            "$text": "Choose a friendly unit within 24″ of the caster. The chosen unit gains +2 Off and has its Weapon’s Aim improved by 1. The effects last until the start of your next Magic Phase.",
+            "typeId": "c802-046d-42b2-b2f6"
+          }
+        ]
+      },
+      {
+        "name": "Ice and Fire",
+        "id": "2f59-6b5d-0dcc-d3fe",
+        "hidden": false,
+        "publicationId": "95f6-f688-3d9f-b47f",
+        "typeId": "d428-3d01-f701-8beb",
+        "typeName": "Spells",
+        "characteristics": [
+          {"name": "Casting Value", "$text": "7+", "typeId": "ac35-92d2-bc9d-f06f"},
+          {
+            "name": "Effect",
+            "$text": "Choose an enemy unit within 24″ and within Line of Sight of the caster. Neither the caster nor the target may be Engaged in Combat. The chosen unit suffers 2D3 Hits with Str 4 and AP 0. Successful Armour Saves against wounds caused by this spell must be re-rolled.",
+            "typeId": "c802-046d-42b2-b2f6"
+          }
+        ]
+      },
+      {
+        "name": "Perception of Strength",
+        "id": "a9da-1581-58e5-ea83",
+        "hidden": false,
+        "publicationId": "95f6-f688-3d9f-b47f",
+        "typeId": "d428-3d01-f701-8beb",
+        "typeName": "Spells",
+        "characteristics": [
+          {"name": "Casting Value", "$text": "8+", "typeId": "ac35-92d2-bc9d-f06f"},
+          {
+            "name": "Effect",
+            "$text": "Choose a unit within 24″ of the caster. If the target is a friendly unit it gains +1 Str and +1 AP. Instead, if the target is an enemy unit it suffers -1 Str and -1 AP. The effects last until the start of your next Magic Phase.",
+            "typeId": "c802-046d-42b2-b2f6"
+          }
+        ]
+      },
+      {
+        "name": "Entwining Roots",
+        "id": "ecd0-a0c9-f629-1d41",
+        "hidden": false,
+        "publicationId": "51f2-3203-d1a3-a2b7",
+        "typeId": "d428-3d01-f701-8beb",
+        "typeName": "Spells",
+        "characteristics": [
+          {"name": "Casting Value", "$text": "5+", "typeId": "ac35-92d2-bc9d-f06f"},
+          {
+            "name": "Effect",
+            "$text": "Choose an enemy unit within 18″ of the caster or within 6″ of any Hindering or Elevated Terrain. The chosen unit suffers -1 Off, -1 Def, and has its Weapon’s Aim reduced by 1. The effects last until the start of your next Magic Phase.",
+            "typeId": "c802-046d-42b2-b2f6"
+          }
+        ]
+      },
+      {
+        "name": "Healing Waters",
+        "id": "723b-f1bf-d5a5-7be7",
+        "hidden": false,
+        "publicationId": "51f2-3203-d1a3-a2b7",
+        "typeId": "d428-3d01-f701-8beb",
+        "typeName": "Spells",
+        "characteristics": [
+          {"name": "Casting Value", "$text": "6+", "typeId": "ac35-92d2-bc9d-f06f"},
+          {
+            "name": "Effect",
+            "$text": "Choose a friendly unit within 18″ of the caster. The chosen unit gains Aegis (5+). If the target already had Aegis (5+), it gains Aegis (4+) instead. The effects last until the start of your next Magic Phase.",
+            "typeId": "c802-046d-42b2-b2f6"
+          }
+        ]
+      },
+      {
+        "name": "Master of Earth",
+        "id": "5a60-fc47-134b-0a57",
+        "hidden": false,
+        "publicationId": "51f2-3203-d1a3-a2b7",
+        "typeId": "d428-3d01-f701-8beb",
+        "typeName": "Spells",
+        "characteristics": [
+          {"name": "Casting Value", "$text": "8+", "typeId": "ac35-92d2-bc9d-f06f"},
+          {
+            "name": "Effect",
+            "$text": "Choose an enemy unit within 18″ of the caster or within 6″ of any Hindering or Elevated Terrain. Neither the caster nor the target may be Engaged in Combat. The chosen unit suffers 2D3 Hits with Str 4 and AP 1.",
+            "typeId": "c802-046d-42b2-b2f6"
+          }
+        ]
+      },
+      {
+        "name": "Spectral Blades",
+        "id": "c981-ae22-ab80-6615",
+        "hidden": false,
+        "publicationId": "7b49-88ab-0765-ad93",
+        "typeId": "d428-3d01-f701-8beb",
+        "typeName": "Spells",
+        "characteristics": [
+          {"name": "Casting Value", "$text": "6+", "typeId": "ac35-92d2-bc9d-f06f"},
+          {
+            "name": "Effect",
+            "$text": "Choose a friendly unit within 18″ of the caster. The chosen unit must re-roll failed To-Wound rolls with its Melee Attacks. The effects last until the start of your next Magic Phase.",
+            "typeId": "c802-046d-42b2-b2f6"
+          }
+        ]
+      },
+      {
+        "name": "Hasten the Hour",
+        "id": "a17f-cbe5-9212-ade5",
+        "hidden": false,
+        "publicationId": "7b49-88ab-0765-ad93",
+        "typeId": "d428-3d01-f701-8beb",
+        "typeName": "Spells",
+        "characteristics": [
+          {"name": "Casting Value", "$text": "7+", "typeId": "ac35-92d2-bc9d-f06f"},
+          {
+            "name": "Effect",
+            "$text": "Choose an enemy unit within 18″ and within Line of Sight of the caster. Neither the caster nor the target may be Engaged in Combat. One model, which can be a Character joined to the unit, suffers 1 Hit that wounds automatically with AP 10.",
+            "typeId": "c802-046d-42b2-b2f6"
+          }
+        ]
+      },
+      {
+        "name": "Pentagram of Pain",
+        "id": "d3b4-3a5d-0763-f8ae",
+        "hidden": false,
+        "publicationId": "86b1-5f2c-1b57-1d16",
+        "typeId": "d428-3d01-f701-8beb",
+        "typeName": "Spells",
+        "characteristics": [
+          {"name": "Casting Value", "$text": "5+", "typeId": "ac35-92d2-bc9d-f06f"},
+          {
+            "name": "Effect",
+            "$text": "Choose an enemy unit within 24″ and within Line of Sight of the caster. Neither the caster nor the target may be Engaged in Combat. The chosen unit suffers D3+1 Hits with Str 4 and AP 1.",
+            "typeId": "c802-046d-42b2-b2f6"
+          }
+        ]
+      },
+      {
+        "name": "Rune of Resolve",
+        "id": "7482-d156-db65-7153",
+        "hidden": false,
+        "publicationId": "aa08-98af-8084-fa14",
+        "typeId": "d428-3d01-f701-8beb",
+        "typeName": "Spells",
+        "characteristics": [
+          {"name": "Casting Value", "$text": "4+", "typeId": "ac35-92d2-bc9d-f06f"},
+          {
+            "name": "Effect",
+            "$text": "Choose a friendly unit within 12″ of the caster that is not fleeing and that has not failed a charge, rallied or already performed a magical move during this turn. The chosen unit may instantly perform a 8″ Advance Move.",
+            "typeId": "c802-046d-42b2-b2f6"
+          }
+        ]
+      },
+      {
+        "name": "Break the Spirit",
+        "id": "20c0-0162-14a5-d265",
+        "hidden": false,
+        "publicationId": "7c51-f505-c212-9866",
+        "typeId": "d428-3d01-f701-8beb",
+        "typeName": "Spells",
+        "characteristics": [
+          {"name": "Casting Value", "$text": "8+", "typeId": "ac35-92d2-bc9d-f06f"},
+          {
+            "name": "Effect",
+            "$text": "Choose an enemy unit within 18″ of the caster. The target suffers -1 to Hit and treats all Terrain (including Open Terrain) as Dangerous Terrain (2). The effects last until the start of your next Magic Phase.",
+            "typeId": "c802-046d-42b2-b2f6"
+          }
+        ]
+      },
+      {
+        "name": "Flaming Swords",
+        "id": "8ce0-c2c4-0428-7e1b",
+        "hidden": false,
+        "publicationId": "7e39-5ada-999a-d814",
+        "typeId": "d428-3d01-f701-8beb",
+        "typeName": "Spells",
+        "characteristics": [
+          {"name": "Casting Value", "$text": "7+", "typeId": "ac35-92d2-bc9d-f06f"},
+          {
+            "name": "Effect",
+            "$text": "Choose a friendly unit within 18″ of the caster. The target’s Melee and Shooting Attacks gain a +1 To-Wound modifier. The effects last until the start of your next Magic Phase.",
+            "typeId": "c802-046d-42b2-b2f6"
+          }
+        ]
+      },
+      {
+        "name": "Danse Macabre",
+        "id": "d9ae-0a43-5b04-9131",
+        "hidden": false,
+        "publicationId": "7b49-88ab-0765-ad93",
+        "typeId": "d428-3d01-f701-8beb",
+        "typeName": "Spells",
+        "characteristics": [
+          {"name": "Casting Value", "$text": "8+", "typeId": "ac35-92d2-bc9d-f06f"},
+          {
+            "name": "Effect",
+            "$text": "Target all friendly units within 9″ of the caster that are not fleeing and that has not failed a charge, rallied or already performed a magical move during this turn. The target units may instantly perform a 6″ Advance Move.",
+            "typeId": "c802-046d-42b2-b2f6"
+          }
+        ]
+      },
+      {
+        "name": "Awaken the Beast",
+        "id": "99d6-5fc1-1d10-dad7",
+        "hidden": false,
+        "publicationId": "7c51-f505-c212-9866",
+        "typeId": "d428-3d01-f701-8beb",
+        "typeName": "Spells",
+        "characteristics": [
+          {"name": "Casting Value", "$text": "6+", "typeId": "ac35-92d2-bc9d-f06f"},
+          {
+            "name": "Effect",
+            "$text": "Choose a friendly unit within 18″ of the caster. The chosen unit gains +1 Strength and +1 AP. The effects last until the start of your next Magic Phase.",
+            "typeId": "c802-046d-42b2-b2f6"
+          }
+        ]
+      },
+      {
+        "name": "Swarm of Insects",
+        "id": "116a-cc2b-e27c-a458",
+        "hidden": false,
+        "publicationId": "7c51-f505-c212-9866",
+        "typeId": "d428-3d01-f701-8beb",
+        "typeName": "Spells",
+        "characteristics": [
+          {"name": "Casting Value", "$text": "6+", "typeId": "ac35-92d2-bc9d-f06f"},
+          {
+            "name": "Effect",
+            "$text": "Choose an enemy unit within 24″ and within Line of Sight of the caster. Neither the caster nor the target may be Engaged in Combat. The chosen unit suffers 4D6 Hits with Str 1 and AP 0.",
+            "typeId": "c802-046d-42b2-b2f6"
+          }
+        ]
+      },
+      {
+        "name": "The Rot Within",
+        "id": "dcbd-aed0-699f-3942",
+        "hidden": false,
+        "publicationId": "86b1-5f2c-1b57-1d16",
+        "typeId": "d428-3d01-f701-8beb",
+        "typeName": "Spells",
+        "characteristics": [
+          {"name": "Casting Value", "$text": "6+", "typeId": "ac35-92d2-bc9d-f06f"},
+          {
+            "name": "Effect",
+            "$text": "Choose an enemy unit within 24″ of the caster. The target suffers -1 Off and -1 Def, to a minimum of one. The caster gains +1 Off and +1 Def. The effects last until the start of your next Magic Phase.",
+            "typeId": "c802-046d-42b2-b2f6"
+          }
+        ]
+      },
+      {
+        "name": "Wrath of God",
+        "id": "c11c-d00f-fff6-80c5",
+        "hidden": false,
+        "publicationId": "06cd-302c-677f-1d3a",
+        "typeId": "d428-3d01-f701-8beb",
+        "typeName": "Spells",
+        "characteristics": [
+          {"name": "Casting Value", "$text": "10+", "typeId": "ac35-92d2-bc9d-f06f"},
+          {
+            "name": "Effect",
+            "$text": "Choose an enemy unit within 24″ and within Line of Sight of the caster. Neither the caster nor the target may be Engaged in Combat. Each (enemy and friendly) unengaged unit within 2D3″ of the target suffers 2D3 Hits with Str 5 and AP 2.",
+            "typeId": "c802-046d-42b2-b2f6"
+          }
+        ]
+      },
+      {
+        "name": "The Grave Calls",
+        "id": "4f8a-464b-56f0-0ae4",
+        "hidden": false,
+        "publicationId": "86b1-5f2c-1b57-1d16",
+        "typeId": "d428-3d01-f701-8beb",
+        "typeName": "Spells",
+        "characteristics": [
+          {"name": "Casting Value", "$text": "9+", "typeId": "ac35-92d2-bc9d-f06f"},
+          {
+            "name": "Effect",
+            "$text": "Choose an enemy unit within 18″ and within Line of Sight of the caster. Neither the caster nor the target may be Engaged in Combat. The chosen unit suffers 2D3 Hits with Str 5 and AP 2.",
+            "typeId": "c802-046d-42b2-b2f6"
+          }
+        ]
+      },
+      {
+        "name": "Bewitching Glare",
+        "id": "4b31-2ce8-5303-5447",
+        "hidden": false,
+        "publicationId": "763f-8a78-64de-c402",
+        "typeId": "d428-3d01-f701-8beb",
+        "typeName": "Spells",
+        "characteristics": [
+          {"name": "Casting Value", "$text": "9+", "typeId": "ac35-92d2-bc9d-f06f"},
+          {
+            "name": "Effect",
+            "$text": "Choose an enemy unit within 18″ of the caster. Melee and Shooting Attacks against the chosen unit must reroll failed To-Wound rolls. The effects last until the start of your next Magic Phase.",
+            "typeId": "c802-046d-42b2-b2f6"
+          }
+        ]
+      },
+      {
+        "name": "Scorching Salvo",
+        "id": "7958-59a9-c425-d215",
+        "hidden": false,
+        "publicationId": "7e39-5ada-999a-d814",
+        "typeId": "d428-3d01-f701-8beb",
+        "typeName": "Spells",
+        "characteristics": [
+          {"name": "Casting Value", "$text": "8+", "typeId": "ac35-92d2-bc9d-f06f"},
+          {
+            "name": "Effect",
+            "$text": "Targets all enemy units within 18″ of the caster which are not Engaged in Combat. The target units suffer D3+1 Hits with Str 4 and AP 0.",
+            "typeId": "c802-046d-42b2-b2f6"
+          }
+        ]
+      },
+      {
+        "name": "Hand of Heaven",
+        "id": "db7e-e5b1-8a1f-78cd",
+        "hidden": false,
+        "publicationId": "06cd-302c-677f-1d3a",
+        "typeId": "d428-3d01-f701-8beb",
+        "typeName": "Spells",
+        "characteristics": [
+          {"name": "Casting Value", "$text": "5+", "typeId": "ac35-92d2-bc9d-f06f"},
+          {
+            "name": "Effect",
+            "$text": "Choose an enemy unit within 24″ and within Line of Sight of the caster. Neither the caster nor the target may be Engaged in Combat. The chosen unit suffers D3+1 Hits with Str D6 and AP 2.",
+            "typeId": "c802-046d-42b2-b2f6"
+          }
+        ]
+      },
+      {
+        "name": "Smite the Unbeliever",
+        "id": "03f1-a264-cf8b-cd88",
+        "hidden": false,
+        "publicationId": "06cd-302c-677f-1d3a",
+        "typeId": "d428-3d01-f701-8beb",
+        "typeName": "Spells",
+        "characteristics": [
+          {"name": "Casting Value", "$text": "5+", "typeId": "ac35-92d2-bc9d-f06f"},
+          {
+            "name": "Effect",
+            "$text": "Choose an Enemy unit within 24″ and roll a D6. If 1-3 is rolled, the target suffers -1 Res. If 4-6 is rolled, the target suffers -1 Str and -1 AP. The effects last until the start of your next Magic Phase.",
+            "typeId": "c802-046d-42b2-b2f6"
+          }
+        ]
+      },
+      {
+        "name": "The Wheel Turns",
+        "id": "9e2a-3277-f838-54ae",
+        "hidden": false,
+        "publicationId": "763f-8a78-64de-c402",
+        "typeId": "d428-3d01-f701-8beb",
+        "typeName": "Spells",
+        "characteristics": [
+          {"name": "Casting Value", "$text": "6+", "typeId": "ac35-92d2-bc9d-f06f"},
+          {
+            "name": "Effect",
+            "$text": "Choose a unit (friendly or enemy) within 18″ of the caster. Until the start of your next Magic Phase, Melee Attacks against it always fail on natural to-Hit rolls of ’1’,’2’ and ’3’ and always succeed on natural to-Hit rolls of ’4’, ’5’, and ’6’.",
+            "typeId": "c802-046d-42b2-b2f6"
+          }
+        ]
+      },
+      {
+        "name": "Raven’s Wing",
+        "id": "bcb1-21fb-e4e0-0c9e",
+        "hidden": false,
+        "publicationId": "763f-8a78-64de-c402",
+        "typeId": "d428-3d01-f701-8beb",
+        "typeName": "Spells",
+        "characteristics": [
+          {"name": "Casting Value", "$text": "4+", "typeId": "ac35-92d2-bc9d-f06f"},
+          {
+            "name": "Effect",
+            "$text": "Choose a friendly unit within 18″ of the caster that is not fleeing and that has not failed a charge, rallied or already performed a magical move during this turn. The chosen unit may instantly perform an 8″ Advance Move.",
+            "typeId": "c802-046d-42b2-b2f6"
+          }
+        ]
+      },
+      {
+        "name": "Death is Only the Beginning",
+        "id": "9246-c829-e370-098a",
+        "hidden": false,
+        "publicationId": "34d8-31db-29f5-1420",
+        "typeId": "d428-3d01-f701-8beb",
+        "typeName": "Spells",
+        "characteristics": [
+          {"name": "Casting Value", "$text": "-", "typeId": "ac35-92d2-bc9d-f06f"},
+          {
+            "name": "Effect",
+            "$text": "Successfully cast Amplified Spells trigger this additional effect on each friendly unit it targets.\nThe unit (or a Character joined to it) recovers a number of previously lost Health Points equal to its Rsr characteristic value. Characters and Towering models may each only recover up to 1 HP per Magic Phase.",
+            "typeId": "c802-046d-42b2-b2f6"
+          }
+        ]
+      },
+      {
+        "name": "Rune of Resilience",
+        "id": "ea43-28e9-3a43-b317",
+        "hidden": false,
+        "publicationId": "aa08-98af-8084-fa14",
+        "typeId": "d428-3d01-f701-8beb",
+        "typeName": "Spells",
+        "characteristics": [
+          {"name": "Casting Value", "$text": "8+", "typeId": "ac35-92d2-bc9d-f06f"},
+          {
+            "name": "Effect",
+            "$text": "Choose a friendly unit within 12″ of the caster. All To-Wound rolls against the target suffer a -1 modifier. The effects last until the start of your next Magic Phase.",
+            "typeId": "c802-046d-42b2-b2f6"
+          }
+        ]
+      },
+      {
+        "name": "Rune of Revocation",
+        "id": "b042-44ff-ba57-4f61",
+        "hidden": false,
+        "publicationId": "aa08-98af-8084-fa14",
+        "typeId": "d428-3d01-f701-8beb",
+        "typeName": "Spells",
+        "characteristics": [
+          {"name": "Casting Value", "$text": "8+", "typeId": "ac35-92d2-bc9d-f06f"},
+          {
+            "name": "Effect",
+            "$text": "Choose a unit within 12″ of the caster. All spell effects currently affecting the unit are terminated and the next spell cast by your opponent on this unit is automatically dispelled. The effects last until the start of your next Magic Phase.",
+            "typeId": "c802-046d-42b2-b2f6"
+          }
+        ]
+      },
+      {
+        "name": "Arise!",
+        "id": "8711-338e-de2f-8ba9",
+        "hidden": false,
+        "publicationId": "34d8-31db-29f5-1420",
+        "typeId": "d428-3d01-f701-8beb",
+        "typeName": "Spells",
+        "characteristics": [
+          {"name": "Casting Value", "$text": "{4+} / [8+] (Choose casting value before rolling to cast)", "typeId": "ac35-92d2-bc9d-f06f"},
+          {
+            "name": "Effect",
+            "$text": "Replicable (can be cast multiple times in a phase, but by different Wizards).\nChoose {one} [two] friendly units (or a Character joined to it) within 12″ of the caster. Each target recovers a number of previously lost HP equal to their Rsr characteristic value. Characters and Towering models may each only recover up to 1 HP per Magic Phase.",
+            "typeId": "c802-046d-42b2-b2f6"
+          }
+        ]
+      },
+      {
+        "name": "Black Wing Totem",
+        "id": "3aa7-a9a4-252f-523b",
+        "hidden": false,
+        "publicationId": "34d8-31db-29f5-1420",
+        "typeId": "d428-3d01-f701-8beb",
+        "typeName": "Spells",
+        "characteristics": [
+          {"name": "Casting Value", "$text": "8+", "typeId": "ac35-92d2-bc9d-f06f"},
+          {
+            "name": "Effect",
+            "$text": "Choose a friendly unit within 18″ of the caster. Until the beginning of your next magic phase, the chosen unit gains +3 Agi and adds D3+1″ to its Charge Range.",
+            "typeId": "c802-046d-42b2-b2f6"
+          }
+        ]
+      },
+      {
+        "name": "Blooded Horn Totem",
+        "id": "6c6a-09bc-38dd-adc0",
+        "hidden": false,
+        "publicationId": "34d8-31db-29f5-1420",
+        "typeId": "d428-3d01-f701-8beb",
+        "typeName": "Spells",
+        "characteristics": [
+          {"name": "Casting Value", "$text": "8+", "typeId": "ac35-92d2-bc9d-f06f"},
+          {
+            "name": "Effect",
+            "$text": "Choose a friendly unit within 18″ of the caster. Until the beginning of your next magic phase, the chosen unit gains +1 Att and its melee attacks gain +2 AP.",
+            "typeId": "c802-046d-42b2-b2f6"
+          }
+        ]
+      },
+      {
+        "name": "Spear of Infinity",
+        "id": "e9c3-272f-e81c-5360",
+        "hidden": false,
+        "publicationId": "34d8-31db-29f5-1420",
+        "typeId": "d428-3d01-f701-8beb",
+        "typeName": "Spells",
+        "characteristics": [
+          {"name": "Casting Value", "$text": "4+", "typeId": "ac35-92d2-bc9d-f06f"},
+          {
+            "name": "Effect",
+            "$text": "Replicable (can be cast multiple times in a phase, but by different Wizards).\nChoose an enemy unit within 24″ and within Line of Sight of the caster. Neither the caster nor the target may be Engaged in Combat. The chosen unit suffers 1 Hit with Str 5, AP 1 and Multiple Wounds (2).",
+            "typeId": "c802-046d-42b2-b2f6"
+          }
+        ]
+      },
+      {
+        "name": "Fireball",
+        "id": "826f-33e5-5bc2-fad8",
+        "hidden": false,
+        "publicationId": "7e39-5ada-999a-d814",
+        "typeId": "d428-3d01-f701-8beb",
+        "typeName": "Spells",
+        "characteristics": [
+          {"name": "Casting Value", "$text": "5+", "typeId": "ac35-92d2-bc9d-f06f"},
+          {
+            "name": "Effect",
+            "$text": "Replicable (can be cast multiple times in a phase, but by different Wizards).\nChoose an enemy unit within 36″ and within Line of Sight of the caster. Neither the caster nor the target may be Engaged in Combat. The chosen unit suffers D3+1 Hits with Str 4 and AP 0.",
+            "typeId": "c802-046d-42b2-b2f6"
+          }
+        ]
+      },
+      {
+        "name": "Dragon",
+        "id": "3835-4918-cad4-f02c",
+        "hidden": false,
+        "typeId": "c49b-bd4f-a454-f1a6",
+        "typeName": "Mount",
+        "characteristics": [
+          {"name": "Adv", "$text": "7\"", "typeId": "b855-bb41-8717-647b"},
+          {"name": "Mar", "$text": "14\"", "typeId": "f815-a491-49bc-2827"},
+          {"name": "HP", "$text": "5", "typeId": "06be-3bca-2fc5-9424"},
+          {"name": "Res", "$text": "5", "typeId": "77a4-2018-c32f-c060"},
+          {"name": "Arm", "$text": "3", "typeId": "613e-0d60-ad3b-31b5"},
+          {"name": "Base", "$text": "50×100mm", "typeId": "4775-c7ad-7fc1-9380"}
+        ]
+      },
+      {
+        "name": "Bull of Shamut",
+        "id": "c64e-b071-7f3b-a679",
+        "hidden": false,
+        "typeId": "f27d-646c-ed58-71eb",
+        "typeName": "Mount (Aegis)",
+        "characteristics": [
+          {"name": "Adv", "$text": "6\"", "typeId": "d531-8eba-2abe-8566"},
+          {"name": "Mar", "$text": "12\"", "typeId": "f5f4-5160-4a58-b45c"},
+          {"name": "HP", "$text": "4", "typeId": "acf2-e098-7475-3677"},
+          {"name": "Res", "$text": "5", "typeId": "119c-aa19-b583-81d9"},
+          {"name": "Aeg", "$text": "5+", "typeId": "ce60-2469-7eea-e636"},
+          {"name": "Base", "$text": "50×50mm", "typeId": "159c-ec76-8ab6-5fae"}
+        ]
+      },
+      {
+        "name": "Taurosaur",
+        "id": "f6db-450f-778c-4566",
+        "hidden": false,
+        "typeId": "c49b-bd4f-a454-f1a6",
+        "typeName": "Mount",
+        "characteristics": [
+          {"name": "Adv", "$text": "6\"", "typeId": "b855-bb41-8717-647b"},
+          {"name": "Mar", "$text": "10\"", "typeId": "f815-a491-49bc-2827"},
+          {"name": "HP", "$text": "5", "typeId": "06be-3bca-2fc5-9424"},
+          {"name": "Res", "$text": "5", "typeId": "77a4-2018-c32f-c060"},
+          {"name": "Arm", "$text": "4", "typeId": "613e-0d60-ad3b-31b5"},
+          {"name": "Base", "$text": "50×100mm", "typeId": "4775-c7ad-7fc1-9380"}
+        ]
+      },
+      {
+        "name": "Tusker",
+        "id": "1f3a-8bec-887a-c3a9",
+        "hidden": false,
+        "typeId": "c49b-bd4f-a454-f1a6",
+        "typeName": "Mount",
+        "characteristics": [
+          {"name": "Adv", "$text": "8\"", "typeId": "b855-bb41-8717-647b"},
+          {"name": "Mar", "$text": "14\"", "typeId": "f815-a491-49bc-2827"},
+          {"name": "HP", "typeId": "06be-3bca-2fc5-9424"},
+          {"name": "Res", "$text": "5", "typeId": "77a4-2018-c32f-c060"},
+          {"name": "Arm", "$text": "+2", "typeId": "613e-0d60-ad3b-31b5"},
+          {"name": "Base", "$text": "50×100mm", "typeId": "4775-c7ad-7fc1-9380"}
+        ]
+      },
+      {
+        "name": "Pteradon",
+        "id": "6075-636a-9abc-0b5b",
+        "hidden": false,
+        "typeId": "c49b-bd4f-a454-f1a6",
+        "typeName": "Mount",
+        "characteristics": [
+          {"name": "Adv", "$text": "8\"", "typeId": "b855-bb41-8717-647b"},
+          {"name": "Mar", "$text": "16\"", "typeId": "f815-a491-49bc-2827"},
+          {"name": "HP", "$text": "3", "typeId": "06be-3bca-2fc5-9424"},
+          {"name": "Res", "typeId": "77a4-2018-c32f-c060"},
+          {"name": "Arm", "$text": "+1", "typeId": "613e-0d60-ad3b-31b5"},
+          {"name": "Base", "$text": "40×40mm", "typeId": "4775-c7ad-7fc1-9380"}
+        ]
+      },
+      {
+        "name": "Praetorian Brute",
+        "id": "41e0-7fe6-73bc-ef98",
+        "hidden": false,
+        "typeId": "c49b-bd4f-a454-f1a6",
+        "typeName": "Mount",
+        "characteristics": [
+          {"name": "Adv", "$text": "6\"", "typeId": "b855-bb41-8717-647b"},
+          {"name": "Mar", "$text": "12\"", "typeId": "f815-a491-49bc-2827"},
+          {"name": "HP", "typeId": "06be-3bca-2fc5-9424"},
+          {"name": "Res", "$text": "5", "typeId": "77a4-2018-c32f-c060"},
+          {"name": "Arm", "$text": "+1", "typeId": "613e-0d60-ad3b-31b5"},
+          {"name": "Base", "$text": "40×40mm", "typeId": "4775-c7ad-7fc1-9380"}
+        ]
+      },
+      {
+        "name": "Flying Beast",
+        "id": "a55d-9be4-818e-0eeb",
+        "hidden": false,
+        "typeId": "c49b-bd4f-a454-f1a6",
+        "typeName": "Mount",
+        "characteristics": [
+          {"name": "Adv", "$text": "8\"", "typeId": "b855-bb41-8717-647b"},
+          {"name": "Mar", "$text": "16\"", "typeId": "f815-a491-49bc-2827"},
+          {"name": "HP", "$text": "4", "typeId": "06be-3bca-2fc5-9424"},
+          {"name": "Res", "$text": "5", "typeId": "77a4-2018-c32f-c060"},
+          {"name": "Arm", "$text": "3", "typeId": "613e-0d60-ad3b-31b5"},
+          {"name": "Base", "$text": "50×50mm", "typeId": "4775-c7ad-7fc1-9380"}
+        ]
+      },
+      {
+        "name": "Warhorse",
+        "id": "8d3d-5920-b356-28f2",
+        "hidden": false,
+        "typeId": "c49b-bd4f-a454-f1a6",
+        "typeName": "Mount",
+        "characteristics": [
+          {"name": "Adv", "$text": "8\"", "typeId": "b855-bb41-8717-647b"},
+          {"name": "Mar", "$text": "16\"", "typeId": "f815-a491-49bc-2827"},
+          {"name": "HP", "typeId": "06be-3bca-2fc5-9424"},
+          {"name": "Res", "typeId": "77a4-2018-c32f-c060"},
+          {"name": "Arm", "$text": "+2", "typeId": "613e-0d60-ad3b-31b5"},
+          {"name": "Base", "$text": "25×50mm", "typeId": "4775-c7ad-7fc1-9380"}
+        ]
+      },
+      {
+        "name": "Horse",
+        "id": "003f-449a-38dc-da13",
+        "hidden": false,
+        "typeId": "c49b-bd4f-a454-f1a6",
+        "typeName": "Mount",
+        "characteristics": [
+          {"name": "Adv", "$text": "7\"", "typeId": "b855-bb41-8717-647b"},
+          {"name": "Mar", "$text": "14\"", "typeId": "f815-a491-49bc-2827"},
+          {"name": "HP", "typeId": "06be-3bca-2fc5-9424"},
+          {"name": "Res", "typeId": "77a4-2018-c32f-c060"},
+          {"name": "Arm", "$text": "+2", "typeId": "613e-0d60-ad3b-31b5"},
+          {"name": "Base", "$text": "25×50mm", "typeId": "4775-c7ad-7fc1-9380"}
+        ]
+      },
+      {
+        "name": "Wolf Chariot",
+        "id": "124c-bab0-1b12-0f4b",
+        "hidden": false,
+        "typeId": "c49b-bd4f-a454-f1a6",
+        "typeName": "Mount",
+        "characteristics": [
+          {"name": "Adv", "$text": "9\"", "typeId": "b855-bb41-8717-647b"},
+          {"name": "Mar", "$text": "9\"", "typeId": "f815-a491-49bc-2827"},
+          {"name": "HP", "$text": "4", "typeId": "06be-3bca-2fc5-9424"},
+          {"name": "Res", "$text": "4", "typeId": "77a4-2018-c32f-c060"},
+          {"name": "Arm", "$text": "+1", "typeId": "613e-0d60-ad3b-31b5"},
+          {"name": "Base", "$text": "50×100mm", "typeId": "4775-c7ad-7fc1-9380"}
+        ]
+      },
+      {
+        "name": "Wolf",
+        "id": "cd15-2d99-f982-6a5f",
+        "hidden": false,
+        "typeId": "c49b-bd4f-a454-f1a6",
+        "typeName": "Mount",
+        "characteristics": [
+          {"name": "Adv", "$text": "9\"", "typeId": "b855-bb41-8717-647b"},
+          {"name": "Mar", "$text": "18\"", "typeId": "f815-a491-49bc-2827"},
+          {"name": "HP", "typeId": "06be-3bca-2fc5-9424"},
+          {"name": "Res", "typeId": "77a4-2018-c32f-c060"},
+          {"name": "Arm", "$text": "+1", "typeId": "613e-0d60-ad3b-31b5"},
+          {"name": "Base", "$text": "25×50mm", "typeId": "4775-c7ad-7fc1-9380"}
+        ]
+      },
+      {
+        "name": "War Dais",
+        "id": "a27b-f246-fb99-8578",
+        "hidden": false,
+        "typeId": "c49b-bd4f-a454-f1a6",
+        "typeName": "Mount",
+        "characteristics": [
+          {"name": "Adv", "typeId": "b855-bb41-8717-647b"},
+          {"name": "Mar", "typeId": "f815-a491-49bc-2827"},
+          {"name": "HP", "$text": "4", "typeId": "06be-3bca-2fc5-9424"},
+          {"name": "Res", "typeId": "77a4-2018-c32f-c060"},
+          {"name": "Arm", "$text": "+2", "typeId": "613e-0d60-ad3b-31b5"},
+          {"name": "Base", "$text": "50×50mm", "typeId": "4775-c7ad-7fc1-9380"}
+        ]
+      },
+      {
+        "name": "Unicorn",
+        "id": "69c9-5fda-487a-8008",
+        "hidden": false,
+        "typeId": "c49b-bd4f-a454-f1a6",
+        "typeName": "Mount",
+        "characteristics": [
+          {"name": "Adv", "$text": "10\"", "typeId": "b855-bb41-8717-647b"},
+          {"name": "Mar", "$text": "20\"", "typeId": "f815-a491-49bc-2827"},
+          {"name": "HP", "typeId": "06be-3bca-2fc5-9424"},
+          {"name": "Res", "$text": "4", "typeId": "77a4-2018-c32f-c060"},
+          {"name": "Arm", "$text": "+1", "typeId": "613e-0d60-ad3b-31b5"},
+          {"name": "Base", "$text": "25×50mm", "typeId": "4775-c7ad-7fc1-9380"}
+        ]
+      },
+      {
+        "name": "Skeletal Horse",
+        "id": "f855-198f-db8a-e4b9",
+        "hidden": false,
+        "typeId": "c49b-bd4f-a454-f1a6",
+        "typeName": "Mount",
+        "characteristics": [
+          {"name": "Adv", "$text": "8\"", "typeId": "b855-bb41-8717-647b"},
+          {"name": "Mar", "$text": "16\"", "typeId": "f815-a491-49bc-2827"},
+          {"name": "HP", "typeId": "06be-3bca-2fc5-9424"},
+          {"name": "Res", "typeId": "77a4-2018-c32f-c060"},
+          {"name": "Arm", "$text": "+1", "typeId": "613e-0d60-ad3b-31b5"},
+          {"name": "Base", "$text": "25×50mm", "typeId": "4775-c7ad-7fc1-9380"}
+        ]
+      },
+      {
+        "name": "Skeleton Chariot",
+        "id": "bbe4-6d96-eaae-fdf7",
+        "hidden": false,
+        "typeId": "c49b-bd4f-a454-f1a6",
+        "typeName": "Mount",
+        "characteristics": [
+          {"name": "Adv", "$text": "8\"", "typeId": "b855-bb41-8717-647b"},
+          {"name": "Mar", "$text": "10\"", "typeId": "f815-a491-49bc-2827"},
+          {"name": "HP", "typeId": "06be-3bca-2fc5-9424"},
+          {"name": "Res", "typeId": "77a4-2018-c32f-c060"},
+          {"name": "Arm", "$text": "+1", "typeId": "613e-0d60-ad3b-31b5"},
+          {"name": "Base", "$text": "50×100mm", "typeId": "4775-c7ad-7fc1-9380"}
+        ]
+      },
+      {
+        "name": "Shield Bearers",
+        "id": "d75e-db90-e93d-f219",
+        "hidden": false,
+        "typeId": "c49b-bd4f-a454-f1a6",
+        "typeName": "Mount",
+        "characteristics": [
+          {"name": "Adv", "typeId": "b855-bb41-8717-647b"},
+          {"name": "Mar", "typeId": "f815-a491-49bc-2827"},
+          {"name": "HP", "$text": "4", "typeId": "06be-3bca-2fc5-9424"},
+          {"name": "Res", "typeId": "77a4-2018-c32f-c060"},
+          {"name": "Arm", "$text": "+2", "typeId": "613e-0d60-ad3b-31b5"},
+          {"name": "Base", "$text": "40×20mm", "typeId": "4775-c7ad-7fc1-9380"}
+        ]
+      },
+      {
+        "name": "Raptor",
+        "id": "ec6f-7cb9-08bf-323a",
+        "hidden": false,
+        "typeId": "c49b-bd4f-a454-f1a6",
+        "typeName": "Mount",
+        "characteristics": [
+          {"name": "Adv", "$text": "7\"", "typeId": "b855-bb41-8717-647b"},
+          {"name": "Mar", "$text": "14\"", "typeId": "f815-a491-49bc-2827"},
+          {"name": "HP", "typeId": "06be-3bca-2fc5-9424"},
+          {"name": "Res", "typeId": "77a4-2018-c32f-c060"},
+          {"name": "Arm", "$text": "+2", "typeId": "613e-0d60-ad3b-31b5"},
+          {"name": "Base", "$text": "25×50mm", "typeId": "4775-c7ad-7fc1-9380"}
+        ]
+      },
+      {
+        "name": "Raiding Chariot",
+        "id": "5118-12c2-08ca-6338",
+        "hidden": false,
+        "typeId": "c49b-bd4f-a454-f1a6",
+        "typeName": "Mount",
+        "characteristics": [
+          {"name": "Adv", "$text": "7\"", "typeId": "b855-bb41-8717-647b"},
+          {"name": "Mar", "$text": "7\"", "typeId": "f815-a491-49bc-2827"},
+          {"name": "HP", "$text": "4", "typeId": "06be-3bca-2fc5-9424"},
+          {"name": "Res", "$text": "5", "typeId": "77a4-2018-c32f-c060"},
+          {"name": "Arm", "$text": "+2", "typeId": "613e-0d60-ad3b-31b5"},
+          {"name": "Base", "$text": "50×100mm", "typeId": "4775-c7ad-7fc1-9380"}
+        ]
+      },
+      {
+        "name": "Great Elk",
+        "id": "1c2d-ab36-d50c-8397",
+        "hidden": false,
+        "typeId": "c49b-bd4f-a454-f1a6",
+        "typeName": "Mount",
+        "characteristics": [
+          {"name": "Adv", "$text": "8\"", "typeId": "b855-bb41-8717-647b"},
+          {"name": "Mar", "$text": "16\"", "typeId": "f815-a491-49bc-2827"},
+          {"name": "HP", "typeId": "06be-3bca-2fc5-9424"},
+          {"name": "Res", "$text": "5", "typeId": "77a4-2018-c32f-c060"},
+          {"name": "Arm", "$text": "+1", "typeId": "613e-0d60-ad3b-31b5"},
+          {"name": "Base", "$text": "50×50mm", "typeId": "4775-c7ad-7fc1-9380"}
+        ]
+      },
+      {
+        "name": "Elven Horse",
+        "id": "14c4-7212-1eae-acbd",
+        "hidden": false,
+        "typeId": "c49b-bd4f-a454-f1a6",
+        "typeName": "Mount",
+        "characteristics": [
+          {"name": "Adv", "$text": "9\"", "typeId": "b855-bb41-8717-647b"},
+          {"name": "Mar", "$text": "18\"", "typeId": "f815-a491-49bc-2827"},
+          {"name": "HP", "typeId": "06be-3bca-2fc5-9424"},
+          {"name": "Res", "typeId": "77a4-2018-c32f-c060"},
+          {"name": "Arm", "$text": "+2", "typeId": "613e-0d60-ad3b-31b5"},
+          {"name": "Base", "$text": "25×50mm", "typeId": "4775-c7ad-7fc1-9380"}
+        ]
+      },
+      {
+        "name": "Dark Chariot",
+        "id": "01b0-5919-393d-6ec0",
+        "hidden": false,
+        "typeId": "c49b-bd4f-a454-f1a6",
+        "typeName": "Mount",
+        "characteristics": [
+          {"name": "Adv", "$text": "8\"", "typeId": "b855-bb41-8717-647b"},
+          {"name": "Mar", "$text": "8\"", "typeId": "f815-a491-49bc-2827"},
+          {"name": "HP", "$text": "4", "typeId": "06be-3bca-2fc5-9424"},
+          {"name": "Res", "$text": "5", "typeId": "77a4-2018-c32f-c060"},
+          {"name": "Arm", "$text": "+2", "typeId": "613e-0d60-ad3b-31b5"},
+          {"name": "Base", "$text": "50×100mm", "typeId": "4775-c7ad-7fc1-9380"}
+        ]
+      },
+      {
+        "name": "Brute",
+        "id": "66d4-e0c5-0d4b-7361",
+        "hidden": false,
+        "typeId": "c49b-bd4f-a454-f1a6",
+        "typeName": "Mount",
+        "characteristics": [
+          {"name": "Adv", "$text": "6\"", "typeId": "b855-bb41-8717-647b"},
+          {"name": "Mar", "$text": "12\"", "typeId": "f815-a491-49bc-2827"},
+          {"name": "HP", "typeId": "06be-3bca-2fc5-9424"},
+          {"name": "Res", "$text": "5", "typeId": "77a4-2018-c32f-c060"},
+          {"name": "Arm", "$text": "+1", "typeId": "613e-0d60-ad3b-31b5"},
+          {"name": "Base", "$text": "40×40mm", "typeId": "4775-c7ad-7fc1-9380"}
+        ]
+      },
+      {
+        "name": "Beastie",
+        "id": "715f-75ae-c078-1be2",
+        "hidden": false,
+        "typeId": "c49b-bd4f-a454-f1a6",
+        "typeName": "Mount",
+        "characteristics": [
+          {"name": "Adv", "$text": "8\"", "typeId": "b855-bb41-8717-647b"},
+          {"name": "Mar", "$text": "16\"", "typeId": "f815-a491-49bc-2827"},
+          {"name": "HP", "typeId": "06be-3bca-2fc5-9424"},
+          {"name": "Res", "typeId": "77a4-2018-c32f-c060"},
+          {"name": "Arm", "$text": "+1", "typeId": "613e-0d60-ad3b-31b5"},
+          {"name": "Base", "$text": "25×50mm", "typeId": "4775-c7ad-7fc1-9380"}
+        ]
+      },
+      {
+        "name": "Bear-Dog",
+        "id": "a7e7-7ad9-4aff-46c7",
+        "hidden": false,
+        "typeId": "c49b-bd4f-a454-f1a6",
+        "typeName": "Mount",
+        "characteristics": [
+          {"name": "Adv", "$text": "7\"", "typeId": "b855-bb41-8717-647b"},
+          {"name": "Mar", "$text": "14\"", "typeId": "f815-a491-49bc-2827"},
+          {"name": "HP", "typeId": "06be-3bca-2fc5-9424"},
+          {"name": "Res", "typeId": "77a4-2018-c32f-c060"},
+          {"name": "Arm", "$text": "+2", "typeId": "613e-0d60-ad3b-31b5"},
+          {"name": "Base", "$text": "25×50mm", "typeId": "4775-c7ad-7fc1-9380"}
+        ]
+      },
+      {
+        "name": "Beastie Chariot",
+        "id": "c653-0dd0-78b7-aa7f",
+        "hidden": false,
+        "typeId": "c49b-bd4f-a454-f1a6",
+        "typeName": "Mount",
+        "characteristics": [
+          {"name": "Adv", "$text": "8\"", "typeId": "b855-bb41-8717-647b"},
+          {"name": "Mar", "$text": "8\"", "typeId": "f815-a491-49bc-2827"},
+          {"name": "HP", "$text": "4", "typeId": "06be-3bca-2fc5-9424"},
+          {"name": "Res", "$text": "4", "typeId": "77a4-2018-c32f-c060"},
+          {"name": "Arm", "$text": "+1", "typeId": "613e-0d60-ad3b-31b5"},
+          {"name": "Base", "$text": "50×100mm", "typeId": "4775-c7ad-7fc1-9380"}
+        ]
+      },
+      {
+        "name": "Cadaver Wagon",
+        "id": "5139-454b-ad7b-512a",
+        "hidden": false,
+        "typeId": "c49b-bd4f-a454-f1a6",
+        "typeName": "Mount",
+        "characteristics": [
+          {"name": "Adv", "$text": "4\"", "typeId": "b855-bb41-8717-647b"},
+          {"name": "Mar", "$text": "8\"", "typeId": "f815-a491-49bc-2827"},
+          {"name": "HP", "$text": "4", "typeId": "06be-3bca-2fc5-9424"},
+          {"name": "Res", "$text": "4", "typeId": "77a4-2018-c32f-c060"},
+          {"name": "Arm", "$text": "+2", "typeId": "613e-0d60-ad3b-31b5"},
+          {"name": "Base", "$text": "60×100mm", "typeId": "4775-c7ad-7fc1-9380"}
+        ]
+      },
+      {
+        "name": "Pegasus Charger",
+        "id": "53c0-99db-1d84-a036",
+        "hidden": false,
+        "typeId": "c49b-bd4f-a454-f1a6",
+        "typeName": "Mount",
+        "characteristics": [
+          {"name": "Adv", "$text": "8\"", "typeId": "b855-bb41-8717-647b"},
+          {"name": "Mar", "$text": "16\"", "typeId": "f815-a491-49bc-2827"},
+          {"name": "HP", "typeId": "06be-3bca-2fc5-9424"},
+          {"name": "Res", "$text": "4", "typeId": "77a4-2018-c32f-c060"},
+          {"name": "Arm", "$text": "+2", "typeId": "613e-0d60-ad3b-31b5"},
+          {"name": "Base", "$text": "50×50mm", "typeId": "4775-c7ad-7fc1-9380"}
+        ]
+      },
+      {
+        "name": "Lion Chariot",
+        "id": "057a-b10d-743a-21c2",
+        "hidden": false,
+        "typeId": "c49b-bd4f-a454-f1a6",
+        "typeName": "Mount",
+        "characteristics": [
+          {"name": "Adv", "$text": "8\"", "typeId": "b855-bb41-8717-647b"},
+          {"name": "Mar", "$text": "8\"", "typeId": "f815-a491-49bc-2827"},
+          {"name": "HP", "$text": "4", "typeId": "06be-3bca-2fc5-9424"},
+          {"name": "Res", "$text": "4", "typeId": "77a4-2018-c32f-c060"},
+          {"name": "Arm", "$text": "+2", "typeId": "613e-0d60-ad3b-31b5"},
+          {"name": "Base", "$text": "50×100mm", "typeId": "4775-c7ad-7fc1-9380"}
+        ]
+      },
+      {
+        "name": "Great Beast",
+        "id": "fda5-6e05-8606-e6b2",
+        "hidden": false,
+        "typeId": "c49b-bd4f-a454-f1a6",
+        "typeName": "Mount",
+        "characteristics": [
+          {"name": "Adv", "$text": "7\"", "typeId": "b855-bb41-8717-647b"},
+          {"name": "Mar", "$text": "14\"", "typeId": "f815-a491-49bc-2827"},
+          {"name": "HP", "typeId": "06be-3bca-2fc5-9424"},
+          {"name": "Res", "$text": "5", "typeId": "77a4-2018-c32f-c060"},
+          {"name": "Arm", "$text": "+1", "typeId": "613e-0d60-ad3b-31b5"},
+          {"name": "Base", "$text": "50×75mm", "typeId": "4775-c7ad-7fc1-9380"}
+        ]
+      },
+      {
+        "name": "Pegasus",
+        "id": "3e0b-b2b5-24ac-f5cd",
+        "hidden": false,
+        "typeId": "c49b-bd4f-a454-f1a6",
+        "typeName": "Mount",
+        "characteristics": [
+          {"name": "Adv", "$text": "8\"", "typeId": "b855-bb41-8717-647b"},
+          {"name": "Mar", "$text": "16\"", "typeId": "f815-a491-49bc-2827"},
+          {"name": "HP", "typeId": "06be-3bca-2fc5-9424"},
+          {"name": "Res", "$text": "4", "typeId": "77a4-2018-c32f-c060"},
+          {"name": "Arm", "$text": "+1", "typeId": "613e-0d60-ad3b-31b5"},
+          {"name": "Base", "$text": "40×40mm", "typeId": "4775-c7ad-7fc1-9380"}
+        ]
+      },
+      {
+        "name": "Wardens",
+        "id": "4f8c-2dbc-715e-749d",
+        "hidden": false,
+        "typeId": "c49b-bd4f-a454-f1a6",
+        "typeName": "Mount",
+        "characteristics": [
+          {"name": "Adv", "$text": "6\"", "typeId": "b855-bb41-8717-647b"},
+          {"name": "Mar", "$text": "12\"", "typeId": "f815-a491-49bc-2827"},
+          {"name": "HP", "$text": "5", "typeId": "06be-3bca-2fc5-9424"},
+          {"name": "Res", "typeId": "77a4-2018-c32f-c060"},
+          {"name": "Arm", "$text": "3", "typeId": "613e-0d60-ad3b-31b5"},
+          {"name": "Base", "$text": "50×75mm", "typeId": "4775-c7ad-7fc1-9380"}
+        ]
+      },
+      {
+        "name": "Qilin",
+        "id": "1643-c652-edfe-94ef",
+        "hidden": false,
+        "typeId": "3f62-0113-4c7a-fc00",
+        "typeName": "Mount (Arm & Aegis)",
+        "characteristics": [
+          {"name": "Adv", "$text": "8\"", "typeId": "b4a1-ee24-3419-4b72"},
+          {"name": "Mar", "$text": "16\"", "typeId": "925a-830a-1e7e-74a6"},
+          {"name": "HP", "$text": "4", "typeId": "02cd-0ccb-29b0-fc77"},
+          {"name": "Arm", "$text": "+1", "typeId": "76b4-7800-8256-a83b"},
+          {"name": "Aeg", "$text": "5+", "typeId": "cf74-5268-da60-e7e1"},
+          {"name": "Base", "$text": "40×40mm", "typeId": "7321-499e-04ba-2e4b"}
+        ]
+      },
+      {
+        "name": "War Altar",
+        "id": "9059-e150-757a-ae47",
+        "hidden": false,
+        "typeId": "f27d-646c-ed58-71eb",
+        "typeName": "Mount (Aegis)",
+        "characteristics": [
+          {"name": "Adv", "$text": "8\"", "typeId": "d531-8eba-2abe-8566"},
+          {"name": "Mar", "$text": "8\"", "typeId": "f5f4-5160-4a58-b45c"},
+          {"name": "HP", "$text": "4", "typeId": "acf2-e098-7475-3677"},
+          {"name": "Res", "$text": "5", "typeId": "119c-aa19-b583-81d9"},
+          {"name": "Aeg", "$text": "4+", "typeId": "ce60-2469-7eea-e636"},
+          {"name": "Base", "$text": "50×100mm", "typeId": "159c-ec76-8ab6-5fae"}
+        ]
+      }
+    ],
+    "sharedRules": [
+      {
+        "name": "Area Attack",
+        "id": "3482-36c4-8984-8abc",
+        "description": "When this attack hits, it is multiplied into the number of hits indicated in parenthesis, to a maximum equal to the number of models in the enemy unit. A single one of these hits has Str 7, AP 4 and Multiple Wounds (D3). All other hits have Str 3, AP 0 and no Multiple Wounds. Hits from Area Attack into a Combined Unit are all resolved against the R&F models.",
+        "hidden": false
+      },
+      {
+        "name": "Commanding Presence",
+        "id": "fa4d-f494-36f8-e631",
+        "description": "Friendly units within 12″ of a non-fleeing model with this rule may use the Discipline of this model instead of their own Discipline. Effects modifying the Discipline of the model with this rule are applied before borrowing its Discipline.",
+        "hidden": false
+      },
+      {
+        "name": "Devastating",
+        "id": "8cad-a5ad-9750-e7d6",
+        "description": "In the first round of a combat after the model has successfully charged, it gains the bonus in parentheses.\n\nThese bonus(es) are not applied to  Special Attacks .",
+        "hidden": false
+      },
+      {
+        "name": "Fear",
+        "id": "23e1-d74f-d6d7-9ed6",
+        "description": "Units in contact with one or more models causing Fear suffer -1 Discipline. Units with Fear are immune to the effects of Fear.",
+        "hidden": false
+      },
+      {
+        "name": "Fearless",
+        "id": "c423-6399-7fa1-cc7d",
+        "description": "If half or more of a unit’s models are Fearless, the unit automatically passes Panic Tests and cannot declare a Flee reaction (unless already fleeing), and is immune to the effects of Fear.",
+        "hidden": false
+      },
+      {
+        "name": "Fight in extra Rank",
+        "id": "ebf7-c826-0089-eb30",
+        "description": "The model can make Supporting Attacks from an additional Rank. This rule is cumulative, allowing an additional Rank to make Supporting Attacks for each instance of this rule.",
+        "hidden": false
+      },
+      {
+        "name": "Fly",
+        "id": "ee92-24d5-12a5-4c11",
+        "description": "A unit composed entirely of models with Fly ignores all Terrain Features and units during Charge, Failed Charge, Advance and March moves. It must follow the Unit Spacing  rules (see page  14 ) at the end of the move and is normally affected by the effects of the Terrain Feature from which it starts or ends its movement.",
+        "hidden": false
+      },
+      {
+        "name": "Light Troops",
+        "id": "9d1f-e0c0-066b-3ccb",
+        "description": "Light Troops always count as having 0 ranks, can make any number of Pivots during Advance or March moves and can Shoot even if they Marched. Characters gain Light Troops while joined to a Light Troops unit.",
+        "hidden": false
+      },
+      {
+        "name": "Lightning Reflexes",
+        "id": "d2ae-49c4-a91e-65a8",
+        "description": "Models with Lightning Reflexes rule have +1 to hit with their Melee Attacks.",
+        "hidden": false
+      },
+      {"name": "Support", "id": "b3f5-9ed8-fe66-acad", "description": "Models with Support may make up to 3 Supporting Attacks instead of 1.", "hidden": false},
+      {
+        "name": "Multiple Wounds",
+        "id": "d13f-4908-9dd3-417d",
+        "description": "Unsaved Wounds caused by attacks with Multiple Wounds are multiplied into the value indicated in parentheses. The amount of Wounds that the attack is multiplied into can never be higher than the Health Points Characteristic of the Target (ignoring Wounds suffered previously in the battle).",
+        "hidden": false
+      },
+      {
+        "name": "Poison",
+        "id": "9ceb-e83e-5a0e-e71d",
+        "description": "If the attack successfully hits with a natural Hit roll of ‘6’, it automatically wounds with no Wound roll needed. All other hits must roll to wound as normal.",
+        "hidden": false
+      },
+      {
+        "name": "Supernal",
+        "id": "cf42-c28c-7cfe-c0f3",
+        "description": "When the unit fails a Break Test, it does not Flee. Instead, it suffers a Wound (without any saves allowed) for each point by which it failed the test.",
+        "hidden": false
+      },
+      {
+        "name": "Swiftstride",
+        "id": "c808-f4ab-79e5-7f92",
+        "description": "Units composed entirely of models with Swifstride gain Maximised rolls for Charge Range, Flee Move, Pursuit and Overrun.",
+        "hidden": false
+      },
+      {
+        "name": "Towering",
+        "id": "eac1-fadc-7267-b461",
+        "description": "The model can never join a unit or be joined. When drawing Line of Sight to and from models with Towering, ignore all intervening models without Towering. Unless it has Light Troops, Towering Single Models count as having 1 rank.",
+        "hidden": false
+      },
+      {
+        "name": "Undead",
+        "id": "6aee-30e6-5632-c120",
+        "description": "Undead cannot March unless their move starts within range of a Friendly model’s Commanding Presence.\n\nAt the end of the phase in which the General is removed as a casualty, Undead units must pass a Discipline Test or lose a number of Health Points equal to the amount by which the test was failed, with no saves of any kind allowed.",
+        "hidden": false
+      },
+      {
+        "name": "Unstable",
+        "id": "4d41-486e-1c2f-7e27",
+        "description": "Units with Unstable automatically pass all Break Tests. When an Unstable unit loses a combat, it suffers a Wound (without any saves allowed) for each point of Combat Score by which it lost the combat. Only Characters with Unstable may join Unstable units.",
+        "hidden": false
+      },
+      {
+        "name": "Vanguard",
+        "id": "48a8-5d00-88ee-87f3",
+        "description": "After Deployment and before the first turn starts, units composed entirely of models with Vanguard may perform a 6″ move. The move is performed as a combination of Advance Move and/or Pivots, as in the Movement Phase, including any actions and restrictions the unit would normally have such as Wheeling.\n\nIf both players have units with Vanguard, alternate moving units one at a time, starting with the player that finished deploying last. Units that have moved in this way may not Declare Charges in the first Player Turn if their side has the first turn.",
+        "hidden": false
+      },
+      {
+        "name": "War Machine",
+        "id": "2209-ceac-ed7f-a6a5",
+        "description": "War Machines cannot Declare Charges, March, Pursue or Declare any Charge Reaction other than Hold. They can only shoot if they did not move in the Movement Phase. War Machines have round bases, which means they have no Flank or Rear facings / arcs and can draw Line of Sight from any point on their bases, in any direction.\nWhen a War Machine fails a Panic Test, instead of Fleeing it may not shoot in its next Shooting Phase.\nWhen a unit charges a War Machine, follow the same rules as for normal Charge Moves, except that the charging unit can move into base contact anywhere. Ignore the War Machine’s facing and ignore maximizing number of models in base contact, but you must still contact the War Machine with the charging unit’s Front Facing.\nWhen fighting a War Machine in combat, all models that can draw an uninterrupted line straight forward from any point on their base to the War Machines base can attack it. Models in the second rank can make supporting attacks as normal. War Machines that Break from combat are automatically destroyed.",
+        "hidden": false
+      },
+      {
+        "name": "War Platform",
+        "id": "7e13-dda2-1db4-f0ad",
+        "description": "The model must be joined to a unit (even if it is Towering), and no other model can join the same unit. If a specific unit is indicated in parentheses, it must only join this unit. It can join units with a smaller base size only if the combined size of the replaced models matches the base size of the War Platform model.\n\nUnless otherwise stated, the model must be placed in the centre of the unit’s front rank. The model may not Swap Places  and does not contribute to the number of Ranks of the combined unit.\n\nTowering War Platform models may be chosen as the target of Ranged Attacks and of Spells which cause Hits, instead of the unit it is joined to.",
+        "hidden": false
+      },
+      {
+        "name": "Breath",
+        "id": "918d-bcf8-b99b-e922",
+        "description": "Once per game only.\nCan be used either as a range 6″ Shooting Attack with ’may March& Shoot’, or as a Melee Attack at the model’s Agility (declare the use at the start of its Agility step).\n\nThis Attack inflicts 2D3 automatic Hits at the model’s Strength and Armour Penetration values (unless indicated otherwise).",
+        "hidden": false
+      },
+      {
+        "name": "Grind",
+        "id": "a0e5-76b5-8dc3-b2b7",
+        "description": "This Melee Attack is resolved at Agility 0 and inflicts X automatic Hits at the model’s Strength and Armour Penetration values (unless indicated otherwise).",
+        "hidden": false
+      },
+      {
+        "name": "Impact",
+        "id": "a6c4-2a00-d50b-8dbc",
+        "description": "Only if the model has Charged this Player Turn, against enemies in its Front.\nThis Melee Attack is resolved at Agility 10 and inflicts X automatic Hits at the model’s Strength and Armour Penetration values (unless indicated otherwise).",
+        "hidden": false
+      },
+      {
+        "name": "Stomp",
+        "id": "76a1-6beb-376e-cad4",
+        "description": "Only against enemy units in 20×20 or 25×25mm bases.\nThis Melee Attack is resolved at Agility 0 and inflicts X automatic Hits at the model’s Strength and Armour Penetration values (unless indicated otherwise).",
+        "hidden": false
+      },
+      {"name": "Conclave", "id": "9706-fcd6-4b1a-b140", "description": "This Wizard knows the spell(s) indicated in brackets.", "hidden": false},
+      {"name": "Apprentice", "id": "25cd-80af-77ee-af3a", "description": "This Wizard knows the first spell of its chosen Path of Magic.", "hidden": false},
+      {
+        "name": "Ambush",
+        "id": "a38e-94fa-4640-756d",
+        "description": "Before units are Deployed, declare which of your units will Ambush (first player to deploy declares first). Ambushing units are not Deployed and instead enter the Battlefield on Turn 2, at the start of your Movement Phase. Only Characters with Ambush can join.\n\nWhen the unit enters from Ambush, it may be placed anywhere on the Battlefield with its Rear Facing aligned and in contact with a Board Edge, except with the Edge on the Opponent’s side. It must follow Unit Spacing rules, and if the unit cannot be placed it is lost. Ambushing units cannot March the turn they arrive and count as having moved for Shooting purposes.",
+        "hidden": false
+      },
+      {"name": "Master", "id": "647b-8d6c-875c-d451", "description": "This Wizard knows all three spells of its chosen Path of Magic.", "hidden": false},
+      {"name": "Adept", "id": "1fd3-31f0-8d0d-c3ea", "description": "This Wizard knows the first and second spells of its chosen Path of Magic.", "hidden": false},
+      {
+        "name": "Channel",
+        "id": "4686-8279-4aeb-7c29",
+        "description": "During a Magic Phase, after the Flux Card is drawn and before any Spells are cast, each of the Active Player’s Units and Characters with Channel may add 1 Magic Dice to its owner’s pool, provided it is on the Battlefield and not fleeing.\n\nA maximum of 2 Magic Dice may be added to the Active Player’s pool due to Channel in a single Magic Phase.",
+        "hidden": false
+      },
+      {
+        "name": "Frenzy",
+        "id": "ea73-fc00-0651-b880",
+        "description": "At the start of the Charge phase, if a unit with a Frenzy model can declare a Charge against an enemy within 12″, it must take a Discipline Test with Maximised roll. If failed, it must declare a Charge against it.",
+        "hidden": false
+      },
+      {
+        "name": "Insignificant",
+        "id": "327e-ab9a-2cef-fc4b",
+        "description": "The unit only causes Panic Tests on friendly units with Insignificant. A unit joined by a Character without this rule is no longer Insignificant.",
+        "hidden": false
+      },
+      {
+        "name": "Rally Around the Flag",
+        "id": "25a1-0a5c-3c17-64fc",
+        "description": "All units within 12″ of a friendly non-fleeing model with this rule may re-roll failed Discipline Tests.",
+        "hidden": false
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Army General",
+        "id": "fd22-9438-9ade-492b",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "f574-8f3b-337e-e8da",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "b9b3-d1d7-3052-4966",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "6f4c-5828-75bc-75bb",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "infoLinks": [{"name": "Commanding Presence", "id": "ba34-4383-0893-d4c4", "hidden": false, "targetId": "fa4d-f494-36f8-e631", "type": "rule"}]
+      },
+      {
+        "name": "on Skeletal Horse",
+        "id": "e787-1028-51f3-ad95",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "7040-2c7a-f01d-3f25",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "infoLinks": [
+          {"name": "Swiftstride", "id": "151b-df03-562a-7a56", "hidden": false, "targetId": "c808-f4ab-79e5-7f92", "type": "rule"},
+          {"name": "Skeletal Horse", "id": "1de1-5bbb-1aa1-f747", "hidden": false, "targetId": "f855-198f-db8a-e4b9", "type": "profile"}
+        ]
+      },
+      {
+        "name": "on Warhorse",
+        "id": "8783-696b-1cdf-7ddc",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "60d2-acd3-fb82-bac9",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "infoLinks": [
+          {"name": "Swiftstride", "id": "e777-8e17-00a6-67c1", "hidden": false, "targetId": "c808-f4ab-79e5-7f92", "type": "rule"},
+          {"name": "Warhorse", "id": "05bb-5cdc-725b-c9e3", "hidden": false, "targetId": "8d3d-5920-b356-28f2", "type": "profile"}
+        ]
+      },
+      {
+        "name": "on Great Elk",
+        "id": "4da5-fda9-f9b8-d6d1",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "8cfa-d39c-42de-91ad",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "infoLinks": [
+          {"name": "Swiftstride", "id": "62f8-1d72-e0ce-25ae", "hidden": false, "targetId": "c808-f4ab-79e5-7f92", "type": "rule"},
+          {"name": "Great Elk", "id": "18a8-8ebd-cdce-c35e", "hidden": false, "targetId": "1c2d-ab36-d50c-8397", "type": "profile"}
+        ]
+      },
+      {
+        "name": "on Unicorn",
+        "id": "cfdf-a30c-12c3-4008",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "063b-942c-7a7e-ac00",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "infoLinks": [
+          {"name": "Swiftstride", "id": "0d31-ec2a-4661-fc09", "hidden": false, "targetId": "c808-f4ab-79e5-7f92", "type": "rule"},
+          {"name": "Unicorn", "id": "b417-d1ee-e796-4f9f", "hidden": false, "targetId": "69c9-5fda-487a-8008", "type": "profile"}
+        ]
+      },
+      {
+        "name": "on Flying Beast",
+        "id": "688b-6206-a61a-2506",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "0269-5653-88b4-e93e",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "infoLinks": [
+          {
+            "name": "Grind",
+            "id": "953b-6e2d-b2a6-1f72",
+            "hidden": false,
+            "targetId": "a0e5-76b5-8dc3-b2b7",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (2 Hits, Str 5, AP 3)"}]
+          },
+          {"name": "Swiftstride", "id": "7f0e-f9e9-340e-af2e", "hidden": false, "targetId": "c808-f4ab-79e5-7f92", "type": "rule"},
+          {"name": "Fear", "id": "a3c9-e912-bc87-70fd", "hidden": false, "targetId": "23e1-d74f-d6d7-9ed6", "type": "rule"},
+          {"name": "Fly", "id": "f131-4ac3-b363-9288", "hidden": false, "targetId": "ee92-24d5-12a5-4c11", "type": "rule"},
+          {"name": "Towering", "id": "edaa-7afd-dd3f-7eab", "hidden": false, "targetId": "eac1-fadc-7267-b461", "type": "rule"},
+          {"name": "Flying Beast", "id": "214d-4b4d-d697-82f3", "hidden": false, "targetId": "a55d-9be4-818e-0eeb", "type": "profile"},
+          {
+            "name": "Stomp",
+            "id": "74ed-9130-3219-8d1a",
+            "hidden": false,
+            "targetId": "76a1-6beb-376e-cad4",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (1 Hit, Str 5, AP 3)"}]
+          },
+          {"name": "Light Troops", "id": "01ad-7533-4a71-3040", "hidden": false, "targetId": "9d1f-e0c0-066b-3ccb", "type": "rule"}
+        ]
+      },
+      {
+        "name": "on Elven Horse",
+        "id": "2efd-3480-fe07-c8a2",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "9206-d805-78a3-8edf",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "infoLinks": [
+          {"name": "Swiftstride", "id": "05c8-a598-7593-50a2", "hidden": false, "targetId": "c808-f4ab-79e5-7f92", "type": "rule"},
+          {"name": "Elven Horse", "id": "2544-04f7-126d-11a3", "hidden": false, "targetId": "14c4-7212-1eae-acbd", "type": "profile"}
+        ]
+      },
+      {
+        "name": "on Great Beast",
+        "id": "0f00-46de-c4fb-2696",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "4232-91be-aeb2-3071",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "infoLinks": [
+          {
+            "name": "Grind",
+            "id": "0505-5a97-d6b8-8d9a",
+            "hidden": false,
+            "targetId": "a0e5-76b5-8dc3-b2b7",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (2 Hits, Str 5, AP 2)"}]
+          },
+          {"name": "Swiftstride", "id": "b1a3-f3d0-5b0b-e6a6", "hidden": false, "targetId": "c808-f4ab-79e5-7f92", "type": "rule"},
+          {"name": "Fear", "id": "98f5-7dce-6e27-8a24", "hidden": false, "targetId": "23e1-d74f-d6d7-9ed6", "type": "rule"},
+          {"name": "Towering", "id": "5f3e-7c84-4258-9d37", "hidden": false, "targetId": "eac1-fadc-7267-b461", "type": "rule"},
+          {"name": "Great Beast", "id": "a65a-0636-aad1-c4db", "hidden": false, "targetId": "fda5-6e05-8606-e6b2", "type": "profile"},
+          {
+            "name": "Stomp",
+            "id": "81fd-f92a-38b4-eec7",
+            "hidden": false,
+            "targetId": "76a1-6beb-376e-cad4",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (1 Hit, Str 5, AP 2)"}]
+          }
+        ]
+      },
+      {
+        "name": "on Horse",
+        "id": "fb4c-b469-91ec-db66",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "682c-816a-7eca-3c5a",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "infoLinks": [
+          {"name": "Swiftstride", "id": "8ce1-f719-33be-7de9", "hidden": false, "targetId": "c808-f4ab-79e5-7f92", "type": "rule"},
+          {"name": "Horse", "id": "bf20-8d37-aa3a-4d9a", "hidden": false, "targetId": "003f-449a-38dc-da13", "type": "profile"}
+        ]
+      },
+      {
+        "name": "on Pegasus",
+        "id": "9b3c-54a1-6374-a1eb",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "e71f-a2dd-faf6-a648",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "infoLinks": [
+          {
+            "name": "Stomp",
+            "id": "9bc9-e45f-da1c-753e",
+            "hidden": false,
+            "targetId": "76a1-6beb-376e-cad4",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (1 Hit, Str 4, AP 1)"}]
+          },
+          {"name": "Swiftstride", "id": "bf67-220f-1114-cfa1", "hidden": false, "targetId": "c808-f4ab-79e5-7f92", "type": "rule"},
+          {"name": "Fly", "id": "8889-7168-ca1f-980a", "hidden": false, "targetId": "ee92-24d5-12a5-4c11", "type": "rule"},
+          {"name": "Light Troops", "id": "45b1-ba37-ea30-db49", "hidden": false, "targetId": "9d1f-e0c0-066b-3ccb", "type": "rule"},
+          {"name": "Pegasus", "id": "3456-6cbc-b673-fc70", "hidden": false, "targetId": "3e0b-b2b5-24ac-f5cd", "type": "profile"}
+        ]
+      },
+      {
+        "name": "on Bull of Shamut",
+        "id": "d659-6307-314f-3bb7",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "db7f-39ab-99c7-3dcb",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "infoLinks": [
+          {
+            "name": "Grind",
+            "id": "e07a-6e78-a880-2fb6",
+            "hidden": false,
+            "targetId": "a0e5-76b5-8dc3-b2b7",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (2 Hits, Str 5, AP 2)"}]
+          },
+          {"name": "Swiftstride", "id": "2b06-104b-b6ba-a859", "hidden": false, "targetId": "c808-f4ab-79e5-7f92", "type": "rule"},
+          {
+            "name": "Impact",
+            "id": "827f-ba4a-3413-418a",
+            "hidden": false,
+            "targetId": "a6c4-2a00-d50b-8dbc",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (1 Hit, Str 5, AP 2)"}]
+          },
+          {"name": "Fear", "id": "1f4c-555b-b91c-e7dd", "hidden": false, "targetId": "23e1-d74f-d6d7-9ed6", "type": "rule"},
+          {"name": "Fly", "id": "53da-f29a-b501-114b", "hidden": false, "targetId": "ee92-24d5-12a5-4c11", "type": "rule"},
+          {"name": "Towering", "id": "c25d-506d-0541-d554", "hidden": false, "targetId": "eac1-fadc-7267-b461", "type": "rule"},
+          {"name": "Supernal", "id": "d6fb-cedf-fca5-45fc", "hidden": false, "targetId": "cf42-c28c-7cfe-c0f3", "type": "rule"},
+          {"name": "Bull of Shamut", "id": "e7c9-7869-7365-6b4b", "hidden": false, "targetId": "c64e-b071-7f3b-a679", "type": "profile"},
+          {"name": "Light Troops", "id": "123a-719b-031f-4f9f", "hidden": false, "targetId": "9d1f-e0c0-066b-3ccb", "type": "rule"}
+        ]
+      },
+      {
+        "name": "on Tusker",
+        "id": "0ce0-a40d-aa36-0d79",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "d22a-376f-19c0-48e2",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "infoLinks": [
+          {
+            "name": "Grind",
+            "id": "b201-669d-6410-b5ae",
+            "hidden": false,
+            "targetId": "a0e5-76b5-8dc3-b2b7",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (2 Hits, Str 5, AP 2)"}]
+          },
+          {"name": "Swiftstride", "id": "f614-0c5e-dc22-6937", "hidden": false, "targetId": "c808-f4ab-79e5-7f92", "type": "rule"},
+          {
+            "name": "Impact",
+            "id": "95a5-aae6-773a-7a37",
+            "hidden": false,
+            "targetId": "a6c4-2a00-d50b-8dbc",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (1 Hit, Str 5, AP 2)"}]
+          },
+          {"name": "Towering", "id": "4c6c-dcb0-df48-a945", "hidden": false, "targetId": "eac1-fadc-7267-b461", "type": "rule"},
+          {"name": "Fear", "id": "d086-f58e-cb5e-41f9", "hidden": false, "targetId": "23e1-d74f-d6d7-9ed6", "type": "rule"},
+          {"name": "Tusker", "id": "a2d3-05b7-ce1c-1ae1", "hidden": false, "targetId": "1f3a-8bec-887a-c3a9", "type": "profile"},
+          {
+            "name": "Stomp",
+            "id": "466e-4fd8-e943-a3b9",
+            "hidden": false,
+            "targetId": "76a1-6beb-376e-cad4",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (1 Hit, Str 5, AP 2)"}]
+          }
+        ]
+      },
+      {
+        "name": "on Dark Chariot",
+        "id": "a106-f49d-b6e2-ef70",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "4de2-5a59-bea9-9489",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "infoLinks": [
+          {
+            "name": "Grind",
+            "id": "f0de-1b84-7842-54ed",
+            "hidden": false,
+            "targetId": "a0e5-76b5-8dc3-b2b7",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (2 Hits, Str 4, AP 0)"}]
+          },
+          {"name": "Swiftstride", "id": "6dca-4e28-436b-6c6f", "hidden": false, "targetId": "c808-f4ab-79e5-7f92", "type": "rule"},
+          {
+            "name": "Impact",
+            "id": "c158-8abd-4b3d-ef28",
+            "hidden": false,
+            "targetId": "a6c4-2a00-d50b-8dbc",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (D3+1 Hits, Str 5, AP 2)"}]
+          },
+          {"name": "Dark Chariot", "id": "d004-d30f-c0d5-29ae", "hidden": false, "targetId": "01b0-5919-393d-6ec0", "type": "profile"}
+        ]
+      },
+      {
+        "name": "on Taurosaur",
+        "id": "164e-86ac-37ab-b868",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "7041-3fa7-e8b5-998c",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "infoLinks": [
+          {
+            "name": "Impact",
+            "id": "536e-1923-fdcf-85a5",
+            "hidden": false,
+            "targetId": "a6c4-2a00-d50b-8dbc",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (D3 Hits, Str 6, AP 3)"}]
+          },
+          {"name": "Swiftstride", "id": "a8c4-8c8f-ccb6-0714", "hidden": false, "targetId": "c808-f4ab-79e5-7f92", "type": "rule"},
+          {"name": "Towering", "id": "c320-45ae-0993-5707", "hidden": false, "targetId": "eac1-fadc-7267-b461", "type": "rule"},
+          {"name": "Fear", "id": "b487-2f5f-10ad-5b9b", "hidden": false, "targetId": "23e1-d74f-d6d7-9ed6", "type": "rule"},
+          {"name": "Carnosaur", "id": "417c-a6d5-e667-3252", "hidden": false, "targetId": "f6db-450f-778c-4566", "type": "profile"},
+          {
+            "name": "Stomp",
+            "id": "c6b0-db06-a3a1-d641",
+            "hidden": false,
+            "targetId": "76a1-6beb-376e-cad4",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (D3 Hits, Str 6, AP 3)"}]
+          },
+          {
+            "name": "Grind",
+            "id": "b173-9caa-be4b-ffa4",
+            "hidden": false,
+            "targetId": "a0e5-76b5-8dc3-b2b7",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (2 Hits, Str 6, AP 3)"}]
+          }
+        ]
+      },
+      {
+        "name": "on Shield Bearers",
+        "id": "4abb-ca3c-c1a3-e8ea",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "2c3f-88e7-14ce-3ea4",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "infoLinks": [
+          {
+            "name": "Grind",
+            "id": "894f-81cc-10b7-defa",
+            "hidden": false,
+            "targetId": "a0e5-76b5-8dc3-b2b7",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (1 Hit, Str 4, AP 1)"}]
+          },
+          {"name": "War Platform", "id": "bee3-3308-dc3d-7e01", "hidden": false, "targetId": "7e13-dda2-1db4-f0ad", "type": "rule"},
+          {"name": "Shield Bearers", "id": "e97b-569f-65c0-3d60", "hidden": false, "targetId": "d75e-db90-e93d-f219", "type": "profile"}
+        ]
+      },
+      {
+        "name": "on Beastie",
+        "id": "3d16-a681-5d89-84d8",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "bcc5-7fb4-ae4f-3885",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "infoLinks": [
+          {"name": "Swiftstride", "id": "f3ee-8900-a537-6937", "hidden": false, "targetId": "c808-f4ab-79e5-7f92", "type": "rule"},
+          {"name": "Beastie", "id": "dc44-0b04-f1d3-4e00", "hidden": false, "targetId": "715f-75ae-c078-1be2", "type": "profile"}
+        ]
+      },
+      {
+        "name": "on War Dais",
+        "id": "443e-f5bb-f8a9-df03",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "c906-f89c-e9aa-29d0",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "infoLinks": [
+          {
+            "name": "Grind",
+            "id": "3d3d-5472-7621-9a1d",
+            "hidden": false,
+            "targetId": "a0e5-76b5-8dc3-b2b7",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (2 Hits, Str 4, AP 1)"}]
+          },
+          {"name": "War Platform", "id": "8197-f431-5c1c-003d", "hidden": false, "targetId": "7e13-dda2-1db4-f0ad", "type": "rule"},
+          {"name": "War Dais", "id": "0cd5-89e3-9500-bec3", "hidden": false, "targetId": "a27b-f246-fb99-8578", "type": "profile"}
+        ]
+      },
+      {
+        "name": "on Raptor",
+        "id": "df30-5486-041a-36d4",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "b9b4-fe60-145d-3cb8",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "infoLinks": [
+          {"name": "Swiftstride", "id": "717a-1dad-04e7-eadc", "hidden": false, "targetId": "c808-f4ab-79e5-7f92", "type": "rule"},
+          {"name": "Raptor", "id": "e5cd-37b1-75f3-980a", "hidden": false, "targetId": "ec6f-7cb9-08bf-323a", "type": "profile"}
+        ]
+      },
+      {
+        "name": "on Lion Chariot",
+        "id": "deb0-1b2d-1ca5-9387",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "f71b-b1b7-6b86-8d79",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "infoLinks": [
+          {
+            "name": "Grind",
+            "id": "81ae-6561-747a-6c0a",
+            "hidden": false,
+            "targetId": "a0e5-76b5-8dc3-b2b7",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (2 Hits, Str 5, AP 2)"}]
+          },
+          {"name": "Swiftstride", "id": "0df7-8a62-4a86-fba8", "hidden": false, "targetId": "c808-f4ab-79e5-7f92", "type": "rule"},
+          {
+            "name": "Impact",
+            "id": "6fd3-36c1-c727-c3b6",
+            "hidden": false,
+            "targetId": "a6c4-2a00-d50b-8dbc",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (D3+1 Hits, Str 5, AP 2)"}]
+          },
+          {"name": "Lion Chariot", "id": "c45d-6484-0386-0ec8", "hidden": false, "targetId": "057a-b10d-743a-21c2", "type": "profile"}
+        ]
+      },
+      {
+        "name": "on War Altar",
+        "id": "c03e-a938-5cd2-9cc5",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "58e7-ae09-25b4-2f32",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "infoLinks": [
+          {"name": "Towering", "id": "16f5-25de-8924-f5d9", "hidden": false, "targetId": "eac1-fadc-7267-b461", "type": "rule"},
+          {"name": "Swiftstride", "id": "c5c6-5793-893c-7925", "hidden": false, "targetId": "c808-f4ab-79e5-7f92", "type": "rule"},
+          {
+            "name": "Impact",
+            "id": "a47c-2838-4b9c-3f50",
+            "hidden": false,
+            "targetId": "a6c4-2a00-d50b-8dbc",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (D3+1 Hits, Str 5, AP 2)"}]
+          },
+          {"name": "War Altar", "id": "966c-e3e6-d1ce-5c94", "hidden": false, "targetId": "9059-e150-757a-ae47", "type": "profile"}
+        ]
+      },
+      {
+        "name": "on Skeleton Chariot",
+        "id": "aa09-37ba-cab3-c2e4",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "5ee8-99ea-acf5-3e1b",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "infoLinks": [
+          {
+            "name": "Grind",
+            "id": "3877-194e-e64f-b5b2",
+            "hidden": false,
+            "targetId": "a0e5-76b5-8dc3-b2b7",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (2 Hits, Str 3, AP 0)"}]
+          },
+          {"name": "Swiftstride", "id": "4839-070a-8797-caa0", "hidden": false, "targetId": "c808-f4ab-79e5-7f92", "type": "rule"},
+          {
+            "name": "Impact",
+            "id": "c700-dc56-652b-1bb7",
+            "hidden": false,
+            "targetId": "a6c4-2a00-d50b-8dbc",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (2D3 Hits, Str 4, AP 1)"}]
+          },
+          {"name": "Skeleton Chariot", "id": "ccd9-b4b4-f4b5-3fd9", "hidden": false, "targetId": "bbe4-6d96-eaae-fdf7", "type": "profile"}
+        ]
+      },
+      {
+        "name": "Destiny's Call",
+        "id": "c1b4-2c55-29a8-44bb",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "b769-5d44-78bd-e207",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "profiles": [
+          {
+            "name": "Destiny's Call",
+            "id": "0320-a18d-7db2-4ee7",
+            "hidden": false,
+            "publicationId": "1823-5e13-6dcd-d055",
+            "typeId": "0cf5-b50f-e349-3251",
+            "typeName": "Special Items",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "Cannot be taken by models mounted on ”Chariot”.\nThe model gains Aegis (4+). In addition, its Armour is set to 3 and can never be improved beyond this.",
+                "typeId": "b20c-7835-3b33-78a6"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Essence of Mithril",
+        "id": "296d-35db-4caf-e4b2",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "6e11-6725-5a25-b1ac",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "profiles": [
+          {
+            "name": "Essence of Mithril",
+            "id": "7f81-0644-884b-1b31",
+            "hidden": false,
+            "publicationId": "1823-5e13-6dcd-d055",
+            "typeId": "0cf5-b50f-e349-3251",
+            "typeName": "Special Items",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "Cannot be taken by models mounted on ”Chariot”.\nThe model’s Armour is set to 5 and it can never be improved beyond this.",
+                "typeId": "b20c-7835-3b33-78a6"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hardening Infusion",
+        "id": "d9ba-7f8c-6a96-a545",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "2e50-c3e9-37b4-19cc",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "profiles": [
+          {
+            "name": "Hardening Infusion",
+            "id": "2f78-d42d-de8b-974e",
+            "hidden": false,
+            "publicationId": "1823-5e13-6dcd-d055",
+            "typeId": "0cf5-b50f-e349-3251",
+            "typeName": "Special Items",
+            "characteristics": [{"name": "Description", "$text": "The model gains +1 Armour to a maximum of 5.", "typeId": "b20c-7835-3b33-78a6"}]
+          }
+        ]
+      },
+      {
+        "name": "Obsidian Rock",
+        "id": "6e4a-c238-f93f-29f6",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "39ec-2b1b-6ccf-8be9",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "profiles": [
+          {
+            "name": "Obsidian Rock",
+            "id": "fc60-7a89-8c1e-d036",
+            "hidden": false,
+            "publicationId": "d8b4-36c3-74f3-30d6",
+            "typeId": "0cf5-b50f-e349-3251",
+            "typeName": "Special Items",
+            "characteristics": [{"name": "Description", "$text": "Enemy spells targeting the model’s unit suffer -2 to their Casting Attempt.", "typeId": "b20c-7835-3b33-78a6"}]
+          }
+        ]
+      },
+      {
+        "name": "Shield Breaker",
+        "id": "d35e-ae1d-133f-9c01",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "8f91-ddbc-2258-6562",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "profiles": [
+          {
+            "name": "Shield Breaker",
+            "id": "6d72-6895-8751-ef67",
+            "hidden": false,
+            "publicationId": "d8b4-36c3-74f3-30d6",
+            "typeId": "0cf5-b50f-e349-3251",
+            "typeName": "Special Items",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "Attacks made with this weapon gain +6 Armour Penetration, and can never wound on natural to-Wound rolls of ‘1’ and ‘2’.",
+                "typeId": "b20c-7835-3b33-78a6"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Supernatural Dexterity",
+        "id": "cbbc-980c-2f38-e318",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "d30e-8f9e-b047-ff55",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "profiles": [
+          {
+            "name": "Supernatural Dexterity",
+            "id": "451b-8825-7cd9-45b0",
+            "hidden": false,
+            "publicationId": "d8b4-36c3-74f3-30d6",
+            "typeId": "0cf5-b50f-e349-3251",
+            "typeName": "Special Items",
+            "characteristics": [{"name": "Description", "$text": "The wielder gains +2 Offensive Skill and +2 Agility.", "typeId": "b20c-7835-3b33-78a6"}]
+          }
+        ]
+      },
+      {
+        "name": "Talisman of the Void",
+        "id": "e319-e3ea-5b45-26cf",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "4347-802d-2e16-407f",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "profiles": [
+          {
+            "name": "Talisman of the Void",
+            "id": "f256-fe3b-66fc-5b49",
+            "hidden": false,
+            "publicationId": "d8b4-36c3-74f3-30d6",
+            "typeId": "0cf5-b50f-e349-3251",
+            "typeName": "Special Items",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "Can only be taken by a Wizard Master.\nThe model’s  Channel  adds 2 Magic Dice instead of 1.",
+                "typeId": "b20c-7835-3b33-78a6"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Touch of Greatness",
+        "id": "f29d-4937-0017-0456",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "7e75-785a-5a41-9b36",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "profiles": [
+          {
+            "name": "Touch of Greatness",
+            "id": "3c64-ee73-73c0-f7f0",
+            "hidden": false,
+            "publicationId": "d8b4-36c3-74f3-30d6",
+            "typeId": "0cf5-b50f-e349-3251",
+            "typeName": "Special Items",
+            "characteristics": [{"name": "Description", "$text": "Attacks made with this weapon gain +1 Strength and +1 Armour Penetration.", "typeId": "b20c-7835-3b33-78a6"}]
+          }
+        ]
+      },
+      {
+        "name": "Banner of Speed",
+        "id": "ac31-f9b8-b0b6-01c6",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "764c-5bfe-feb9-cfb9",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "profiles": [
+          {
+            "name": "Banner of Speed",
+            "id": "8336-0723-5e29-0fce",
+            "hidden": false,
+            "publicationId": "ca59-c9fe-69eb-6e8a",
+            "typeId": "0cf5-b50f-e349-3251",
+            "typeName": "Special Items",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "All friendly units within 6″ gain + 1″ Advance and + 2″ March Rate, provided this model is not fleeing.",
+                "typeId": "b20c-7835-3b33-78a6"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Battle Standard",
+        "id": "1577-00d2-98fc-9644",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "c80f-66b7-886d-b3d6",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "profiles": [
+          {
+            "name": "Battle Standard",
+            "id": "f2f3-5f0b-4cbe-ae9d",
+            "hidden": false,
+            "publicationId": "ca59-c9fe-69eb-6e8a",
+            "typeId": "0cf5-b50f-e349-3251",
+            "typeName": "Special Items",
+            "characteristics": [{"name": "Description", "$text": "Cannot be taken by the General.\nThe model gains  Rally Around the Flag", "typeId": "b20c-7835-3b33-78a6"}]
+          }
+        ]
+      },
+      {
+        "name": "Binding Scroll",
+        "id": "e7ad-cf3a-dc30-fea6",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "148b-67d2-6331-5699",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "profiles": [
+          {
+            "name": "Binding Scroll",
+            "id": "7e11-57f3-89ea-86ef",
+            "hidden": false,
+            "publicationId": "ca59-c9fe-69eb-6e8a",
+            "typeId": "0cf5-b50f-e349-3251",
+            "typeName": "Special Items",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "One use only. At the beginning of the opponent’s magic phase, choose one spell available to the opponent. The spell cannot be cast this turn.",
+                "typeId": "b20c-7835-3b33-78a6"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Crown of Autocracy",
+        "id": "f13b-bec0-a866-18e3",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "b7a6-1a48-67bc-3cee",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "profiles": [
+          {
+            "name": "Crown of Autocracy",
+            "id": "eba1-7c50-e3cb-0329",
+            "hidden": false,
+            "publicationId": "ca59-c9fe-69eb-6e8a",
+            "typeId": "0cf5-b50f-e349-3251",
+            "typeName": "Special Items",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "The model’s range of Commanding Presence is increased by 3″ up to a maximum of 18″. If the model does not have Commanding Presence, it gains Commanding Presence with its range set to 3″.",
+                "typeId": "b20c-7835-3b33-78a6"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Crystal Ball",
+        "id": "bbd5-f84d-ccac-db0c",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "c1c6-381d-7009-a59d",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "profiles": [
+          {
+            "name": "Crystall Ball",
+            "id": "0ef0-2e2f-8750-84fa",
+            "hidden": false,
+            "publicationId": "ca59-c9fe-69eb-6e8a",
+            "typeId": "0cf5-b50f-e349-3251",
+            "typeName": "Special Items",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "If the model is on the Battlefield, the first friendly Dispelling Attempt in each magic phase gains a +1 modifier.",
+                "typeId": "b20c-7835-3b33-78a6"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dragon Staff",
+        "id": "3175-f3af-ef7d-d694",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "175d-1e45-d41a-2125",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "profiles": [
+          {
+            "name": "Dragon Staff",
+            "id": "325e-ce1f-d421-8f58",
+            "hidden": false,
+            "publicationId": "ca59-c9fe-69eb-6e8a",
+            "typeId": "0cf5-b50f-e349-3251",
+            "typeName": "Special Items",
+            "characteristics": [{"name": "Description", "$text": "The model gains Breath (Str 4, AP 0).", "typeId": "b20c-7835-3b33-78a6"}]
+          }
+        ]
+      },
+      {
+        "name": "Crown of the Wizard King",
+        "id": "3bff-ab86-bfc4-8499",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "25d9-a022-3951-ccf3",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "profiles": [
+          {
+            "name": "Crown of the Wizard King",
+            "id": "0e64-1ca2-96ce-6855",
+            "hidden": false,
+            "publicationId": "ca59-c9fe-69eb-6e8a",
+            "typeId": "0cf5-b50f-e349-3251",
+            "typeName": "Special Items",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "Cannot be taken by Wizard.\nAt the beginning of the battle before Deployment, choose any Path of Magic which none of your Wizards have access to its Spell number 1. The model becomes an Apprentice of the chosen Path.",
+                "typeId": "b20c-7835-3b33-78a6"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Signet of Command",
+        "id": "f32f-261e-c168-2469",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "611b-dbb9-e7b3-a1c6",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "profiles": [
+          {
+            "name": "Signet of Command",
+            "id": "9c65-4ec5-c1c6-f676",
+            "hidden": false,
+            "publicationId": "ca59-c9fe-69eb-6e8a",
+            "typeId": "0cf5-b50f-e349-3251",
+            "typeName": "Special Items",
+            "characteristics": [{"name": "Description", "$text": "The model gains +1 Discipline to a maximum of 9.", "typeId": "b20c-7835-3b33-78a6"}]
+          }
+        ]
+      },
+      {
+        "name": "Eldrich Inscriptions",
+        "id": "3300-d55f-0ef6-fafd",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "d103-a67d-63f9-8b8c",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "profiles": [
+          {
+            "name": "Eldrich Inscriptions",
+            "id": "76bd-f387-1b3f-91e9",
+            "hidden": false,
+            "publicationId": "ca59-c9fe-69eb-6e8a",
+            "typeId": "0cf5-b50f-e349-3251",
+            "typeName": "Special Items",
+            "characteristics": [{"name": "Description", "$text": "Failed to-Wound rolls from attacks made with this weapon must be re-rolled.", "typeId": "b20c-7835-3b33-78a6"}]
+          }
+        ]
+      },
+      {
+        "name": "Cleansing Light",
+        "id": "a615-18d3-6306-5a79",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "7e19-79bb-fa4e-a34d",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "profiles": [
+          {
+            "name": "Cleansing Light",
+            "id": "118f-a796-25b7-66aa",
+            "hidden": false,
+            "publicationId": "ca59-c9fe-69eb-6e8a",
+            "typeId": "0cf5-b50f-e349-3251",
+            "typeName": "Special Items",
+            "characteristics": [{"name": "Description", "$text": "Successful Aegis Saves taken against attacks made with this weapon must be re-rolled.", "typeId": "b20c-7835-3b33-78a6"}]
+          }
+        ]
+      },
+      {
+        "name": "Banner of Discipline",
+        "id": "60e9-530a-eb42-84e4",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "95ea-8d35-af1f-ae1a",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "profiles": [
+          {
+            "name": "Banner of Discipline",
+            "id": "dd4e-640a-aa9e-31bd",
+            "hidden": false,
+            "publicationId": "ca59-c9fe-69eb-6e8a",
+            "typeId": "0cf5-b50f-e349-3251",
+            "typeName": "Special Items",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "All friendly units within 6″ may re-roll failed Panic Tests, provided this model is not fleeing.",
+                "typeId": "b20c-7835-3b33-78a6"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Armour of Shielding",
+        "id": "bd9e-17ca-bebe-6427",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "fc54-44a2-69e0-b9a7",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "profiles": [
+          {
+            "name": "Armour of Shielding",
+            "id": "51c0-3425-c46f-dcdb",
+            "hidden": false,
+            "publicationId": "1823-5e13-6dcd-d055",
+            "typeId": "0cf5-b50f-e349-3251",
+            "typeName": "Special Items",
+            "characteristics": [{"name": "Description", "$text": "The model gains Aegis (5+).", "typeId": "b20c-7835-3b33-78a6"}]
+          }
+        ]
+      },
+      {
+        "name": "on Bear-Dog",
+        "id": "cf14-49ab-e164-3902",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "37d7-40c2-7564-87ef",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "infoLinks": [
+          {"name": "Swiftstride", "id": "70d4-7919-b059-38be", "hidden": false, "targetId": "c808-f4ab-79e5-7f92", "type": "rule"},
+          {"name": "Bear-Dog", "id": "6541-2d8e-22a0-f255", "hidden": false, "targetId": "a7e7-7ad9-4aff-46c7", "type": "profile"}
+        ]
+      },
+      {
+        "name": "on Beastie Chariot",
+        "id": "058f-691a-a9ff-6de0",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "f349-fd3a-81b7-2acc",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "infoLinks": [
+          {"name": "Swiftstride", "id": "2c46-bfeb-00d8-fab4", "hidden": false, "targetId": "c808-f4ab-79e5-7f92", "type": "rule"},
+          {"name": "Beastie Chariot", "id": "3030-f38b-7e6f-a76b", "hidden": false, "targetId": "c653-0dd0-78b7-aa7f", "type": "profile"},
+          {
+            "name": "Grind",
+            "id": "7065-4283-86c9-a9ec",
+            "hidden": false,
+            "targetId": "a0e5-76b5-8dc3-b2b7",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (2 Hits, Str 3, AP 1)"}]
+          },
+          {
+            "name": "Impact",
+            "id": "33ee-8ff3-8e01-a229",
+            "hidden": false,
+            "targetId": "a6c4-2a00-d50b-8dbc",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (D3+1 Hits, Str 5, AP 2)"}]
+          }
+        ]
+      },
+      {
+        "name": "on Cadaver Wagon",
+        "id": "93f2-43d0-7a7c-e636",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "b2d0-70b1-f84f-1f18",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "infoLinks": [
+          {"name": "Cadaver Wagon", "id": "3fbf-e4dd-547a-9c7c", "hidden": false, "targetId": "5139-454b-ad7b-512a", "type": "profile"},
+          {
+            "name": "Impact",
+            "id": "7463-715c-f21f-2580",
+            "hidden": false,
+            "targetId": "a6c4-2a00-d50b-8dbc",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (1 Hit, Str 4, AP 1)"}]
+          },
+          {
+            "name": "Grind",
+            "id": "42ea-42b1-bb63-0958",
+            "hidden": false,
+            "targetId": "a0e5-76b5-8dc3-b2b7",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (4 Hits, Str 3, AP 0)"}]
+          }
+        ]
+      },
+      {
+        "name": "on Raiding Chariot",
+        "id": "e021-8f5c-d52e-af8b",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "1bf8-492c-3d68-805f",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "infoLinks": [
+          {
+            "name": "Grind",
+            "id": "adaf-76f4-50f7-a832",
+            "hidden": false,
+            "targetId": "a0e5-76b5-8dc3-b2b7",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (2 Hits, Str 4, AP 1)"}]
+          },
+          {"name": "Swiftstride", "id": "dcbb-d049-e3ca-8e03", "hidden": false, "targetId": "c808-f4ab-79e5-7f92", "type": "rule"},
+          {
+            "name": "Impact",
+            "id": "41b2-b08b-6997-1987",
+            "hidden": false,
+            "targetId": "a6c4-2a00-d50b-8dbc",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (D3+1 Hits, Str 5, AP 2)"}]
+          },
+          {"name": "Raiding Chariot", "id": "1213-7885-d1e3-4f83", "hidden": false, "targetId": "5118-12c2-08ca-6338", "type": "profile"}
+        ]
+      },
+      {
+        "name": "on Pegasus Charger",
+        "id": "1b7c-fd0b-2a98-7b16",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "f26a-a0d3-0c5c-a604",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "infoLinks": [
+          {
+            "name": "Grind",
+            "id": "ad5b-6eab-77f9-9779",
+            "hidden": false,
+            "targetId": "a0e5-76b5-8dc3-b2b7",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (1 Hit, Str 4, AP 1)"}]
+          },
+          {"name": "Swiftstride", "id": "12f9-3609-93bc-2222", "hidden": false, "targetId": "c808-f4ab-79e5-7f92", "type": "rule"},
+          {"name": "Fly", "id": "ce3d-57bb-12a8-8316", "hidden": false, "targetId": "ee92-24d5-12a5-4c11", "type": "rule"},
+          {"name": "Towering", "id": "9125-f8b7-321a-b226", "hidden": false, "targetId": "eac1-fadc-7267-b461", "type": "rule"},
+          {"name": "Pegasus Charger", "id": "fba1-a6bf-5d46-3cd7", "hidden": false, "targetId": "53c0-99db-1d84-a036", "type": "profile"},
+          {"name": "Light Troops", "id": "32e6-e32b-2509-ff0f", "hidden": false, "targetId": "9d1f-e0c0-066b-3ccb", "type": "rule"}
+        ]
+      },
+      {
+        "name": "on Praetorian Brute",
+        "id": "cbe6-5cd5-560e-6267",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "9c69-1015-53a3-ce7a",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "infoLinks": [
+          {
+            "name": "Grind",
+            "id": "2f29-cc64-42f1-647e",
+            "hidden": false,
+            "targetId": "a0e5-76b5-8dc3-b2b7",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (2 Hits, Str 5, AP 2)"}]
+          },
+          {"name": "War Platform", "id": "e346-3784-5d33-d33e", "hidden": false, "targetId": "7e13-dda2-1db4-f0ad", "type": "rule"},
+          {"name": "Praetorian Brute", "id": "cdb0-36aa-6221-adbe", "hidden": false, "targetId": "41e0-7fe6-73bc-ef98", "type": "profile"},
+          {
+            "name": "Stomp",
+            "id": "fef3-3053-f319-61b1",
+            "hidden": false,
+            "targetId": "76a1-6beb-376e-cad4",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (1 Hit, Str 5, AP 2)"}]
+          }
+        ]
+      },
+      {
+        "name": "on Pteradon",
+        "id": "c42b-0976-4eb5-1b31",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "9cb1-8ac4-820c-4d31",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "infoLinks": [
+          {
+            "name": "Grind",
+            "id": "aba7-94c3-b427-9758",
+            "hidden": false,
+            "targetId": "a0e5-76b5-8dc3-b2b7",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (2 Hits, Str 4, AP 1)"}]
+          },
+          {"name": "Swiftstride", "id": "8847-7156-594f-e883", "hidden": false, "targetId": "c808-f4ab-79e5-7f92", "type": "rule"},
+          {"name": "Fly", "id": "bab8-5a4c-03de-6719", "hidden": false, "targetId": "ee92-24d5-12a5-4c11", "type": "rule"},
+          {"name": "Light Troops", "id": "bed6-866f-2786-4a4e", "hidden": false, "targetId": "9d1f-e0c0-066b-3ccb", "type": "rule"},
+          {"name": "Pteradon", "id": "1b7a-2780-e930-1d7b", "hidden": false, "targetId": "6075-636a-9abc-0b5b", "type": "profile"},
+          {
+            "name": "Stomp",
+            "id": "3fca-e357-3ac0-499f",
+            "hidden": false,
+            "targetId": "76a1-6beb-376e-cad4",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (1 Hit, Str 4, AP 1)"}]
+          },
+          {"name": "Vanguard", "id": "1ed6-9268-47df-145d", "hidden": false, "targetId": "48a8-5d00-88ee-87f3", "type": "rule"}
+        ]
+      },
+      {
+        "name": "with Wardens",
+        "id": "2ebe-de1a-3b67-9290",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "c8cf-fe0f-9acc-2cb7",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "infoLinks": [
+          {
+            "name": "Grind",
+            "id": "dc94-7cf6-df42-3551",
+            "hidden": false,
+            "targetId": "a0e5-76b5-8dc3-b2b7",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (2 Hits, Str 5, AP 2)"}]
+          },
+          {"name": "Wardens", "id": "bd26-6a38-4fbf-c15b", "hidden": false, "targetId": "4f8c-2dbc-715e-749d", "type": "profile"}
+        ]
+      },
+      {
+        "name": "on Qilin",
+        "id": "1c04-15d4-f162-996b",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "a2ee-ad0f-8725-d015",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 0}],
+        "infoLinks": [
+          {
+            "name": "Grind",
+            "id": "5a36-bef6-23fd-49c8",
+            "hidden": false,
+            "targetId": "a0e5-76b5-8dc3-b2b7",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (2 Hit, Str 5, AP 2)"}]
+          },
+          {"name": "Swiftstride", "id": "0cc7-e81d-0600-0319", "hidden": false, "targetId": "c808-f4ab-79e5-7f92", "type": "rule"},
+          {"name": "Fly", "id": "78d5-0967-2a8c-d2f2", "hidden": false, "targetId": "ee92-24d5-12a5-4c11", "type": "rule"},
+          {"name": "Light Troops", "id": "ac12-b6e9-8947-3084", "hidden": false, "targetId": "9d1f-e0c0-066b-3ccb", "type": "rule"},
+          {"name": "Qilin", "id": "76fa-7c09-5e99-49ea", "hidden": false, "targetId": "1643-c652-edfe-94ef", "type": "profile"},
+          {
+            "name": "Stomp",
+            "id": "520b-a915-d9dd-04bc",
+            "hidden": false,
+            "targetId": "76a1-6beb-376e-cad4",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": " (1 Hit, Str 5, AP 2)"}]
+          },
+          {"name": "Fearless", "id": "26a0-c9aa-33ab-121c", "hidden": false, "targetId": "c423-6399-7fa1-cc7d", "type": "rule"}
+        ]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Weapon",
+        "id": "c175-8913-37a6-2cc4",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "entryLinks": [
+          {
+            "name": "Eldrich Inscriptions",
+            "id": "d9a8-c295-89e6-e6fb",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "3300-d55f-0ef6-fafd",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 50}]
+          },
+          {
+            "name": "Shield Breaker",
+            "id": "bd91-e2b0-5444-6675",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "d35e-ae1d-133f-9c01",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 25}]
+          },
+          {
+            "name": "Supernatural Dexterity",
+            "id": "c63b-a5ec-0b6e-a959",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "cbbc-980c-2f38-e318",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 25}]
+          },
+          {
+            "name": "Cleansing Light",
+            "id": "7c1d-b5d9-193b-9338",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "a615-18d3-6306-5a79",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 25}]
+          },
+          {
+            "name": "Touch of Greatness",
+            "id": "a1fd-4c15-793a-6763",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "f29d-4937-0017-0456",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 50}]
+          }
+        ]
+      },
+      {
+        "name": "Armour",
+        "id": "719f-2c2f-38b9-700e",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "entryLinks": [
+          {
+            "name": "Armour of Shielding",
+            "id": "a907-e231-e439-2816",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "bd9e-17ca-bebe-6427",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 50}]
+          },
+          {
+            "name": "Hardening Infusion",
+            "id": "f12e-f50f-a2d4-ed7d",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "d9ba-7f8c-6a96-a545",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 25}]
+          },
+          {
+            "name": "Destiny's Call",
+            "id": "1919-b7c2-5b8f-fb8f",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "c1b4-2c55-29a8-44bb",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 75}]
+          },
+          {
+            "name": "Essence of Mithril",
+            "id": "dbee-3893-b0be-52cd",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "296d-35db-4caf-e4b2",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 50}]
+          }
+        ]
+      },
+      {
+        "name": "Banner",
+        "id": "72aa-a8b9-e070-f8e0",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "entryLinks": [
+          {
+            "name": "Banner of Speed",
+            "id": "7c79-ca60-b62a-1899",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "ac31-f9b8-b0b6-01c6",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 50}]
+          },
+          {
+            "name": "Battle Standard",
+            "id": "8e67-51c0-a6bd-dd82",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "1577-00d2-98fc-9644",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 50}]
+          },
+          {
+            "name": "Banner of Discipline",
+            "id": "73f3-0a3e-ecc9-b244",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "60e9-530a-eb42-84e4",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 25}]
+          }
+        ]
+      },
+      {
+        "name": "Artefact",
+        "id": "59a3-b0c5-e887-9fa3",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "entryLinks": [
+          {
+            "name": "Binding Scroll",
+            "id": "562b-97b1-3556-f9e1",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "e7ad-cf3a-dc30-fea6",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 50}]
+          },
+          {
+            "name": "Obsidian Rock",
+            "id": "56a6-b3e3-666d-5cb4",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "6e4a-c238-f93f-29f6",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 25}]
+          },
+          {
+            "name": "Crown of Autocracy",
+            "id": "537a-dba6-addf-5609",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "f13b-bec0-a866-18e3",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 25}]
+          },
+          {
+            "name": "Crystal Ball",
+            "id": "9b00-4e39-aaba-94bc",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "bbd5-f84d-ccac-db0c",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 25}]
+          },
+          {
+            "name": "Dragon Staff",
+            "id": "4966-a66f-3996-f139",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "3175-f3af-ef7d-d694",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 25}]
+          },
+          {
+            "name": "Signet of Command",
+            "id": "94e5-e633-e351-051f",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "f32f-261e-c168-2469",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 50}]
+          }
+        ]
+      },
+      {
+        "name": "Armour (Chariot)",
+        "id": "5821-2861-c08f-3bf8",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "entryLinks": [
+          {
+            "name": "Armour of Shielding",
+            "id": "75dc-ed60-a03d-eb93",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "bd9e-17ca-bebe-6427",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 50}]
+          },
+          {
+            "name": "Hardening Infusion",
+            "id": "01a9-7cb9-7575-7a69",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "d9ba-7f8c-6a96-a545",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 25}]
+          }
+        ]
+      },
+      {
+        "name": "Banner (General)",
+        "id": "86eb-a995-9188-91b3",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "entryLinks": [
+          {
+            "name": "Banner of Speed",
+            "id": "d8c4-0c2f-3963-c9cd",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "ac31-f9b8-b0b6-01c6",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 50}]
+          },
+          {
+            "name": "Banner of Discipline",
+            "id": "73ed-abab-d077-b448",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "60e9-530a-eb42-84e4",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 25}]
+          }
+        ]
+      },
+      {
+        "name": "Artefact (Non-Wizard)",
+        "id": "42d0-46a9-eb32-1727",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "entryLinks": [
+          {
+            "name": "Binding Scroll",
+            "id": "85cd-d1d1-5ebd-c013",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "e7ad-cf3a-dc30-fea6",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 50}]
+          },
+          {
+            "name": "Obsidian Rock",
+            "id": "d588-6072-f003-aa86",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "6e4a-c238-f93f-29f6",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 25}]
+          },
+          {
+            "name": "Crown of Autocracy",
+            "id": "7839-6655-d130-e892",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "f13b-bec0-a866-18e3",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 25}]
+          },
+          {
+            "name": "Crystal Ball",
+            "id": "6981-88e4-355d-6ce2",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "bbd5-f84d-ccac-db0c",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 25}]
+          },
+          {
+            "name": "Dragon Staff",
+            "id": "1c8a-d3f7-d5ba-380f",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "3175-f3af-ef7d-d694",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 25}]
+          },
+          {
+            "name": "Crown of the Wizard King",
+            "id": "8628-8db7-d39a-d5a4",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "3bff-ab86-bfc4-8499",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 75}]
+          },
+          {
+            "name": "Signet of Command",
+            "id": "178c-f30a-a836-bc53",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "f32f-261e-c168-2469",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 50}]
+          }
+        ]
+      },
+      {
+        "name": "Artefact (Wizard Master)",
+        "id": "6356-83bd-3958-7e11",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "entryLinks": [
+          {
+            "name": "Talisman of the Void",
+            "id": "526c-df8a-364a-a584",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "e319-e3ea-5b45-26cf",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 50}]
+          },
+          {
+            "name": "Binding Scroll",
+            "id": "56f3-8f9a-88a0-799e",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "e7ad-cf3a-dc30-fea6",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 50}]
+          },
+          {
+            "name": "Obsidian Rock",
+            "id": "1fe5-a42a-6031-5942",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "6e4a-c238-f93f-29f6",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 25}]
+          },
+          {
+            "name": "Crown of Autocracy",
+            "id": "c1c5-d0ba-ee33-9e9c",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "f13b-bec0-a866-18e3",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 25}]
+          },
+          {
+            "name": "Crystal Ball",
+            "id": "ce96-c42d-7fed-d84d",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "bbd5-f84d-ccac-db0c",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 25}]
+          },
+          {
+            "name": "Dragon Staff",
+            "id": "4b3e-4a73-5b4b-f3d7",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "3175-f3af-ef7d-d694",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 25}]
+          },
+          {
+            "name": "Signet of Command",
+            "id": "d6a6-2312-17fc-8271",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "f32f-261e-c168-2469",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "9ff9-d361-a4c3-1efa", "value": 50}]
+          }
+        ]
+      }
+    ]
+  }
+}
