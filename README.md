@@ -1,31 +1,27 @@
-The 9th Age: Essence of War
-==================
+# T9A: Essence of War data
 
-[![GitHub release](https://img.shields.io/github/release/BSData/the-9th-age-essence-of-war.svg?style=flat-square)](https://github.com/BSData/the-9th-age-essence-of-war/releases/latest)
-[![Github commits (since latest release)](https://img.shields.io/github/commits-since/BSData/the-9th-age-essence-of-war/latest.svg?style=flat-square)](https://github.com/BSData/the-9th-age-essence-of-war/releases)
-[![Open Bug issues](https://img.shields.io/github/issues/BSData/the-9th-age-essence-of-war/bug.svg?style=flat-square&label=bugs)](https://github.com/BSData/the-9th-age-essence-of-war/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
-[![GitHub contributors](https://img.shields.io/github/contributors/BSData/the-9th-age-essence-of-war.svg?style=flat-square)](https://github.com/BSData/the-9th-age-essence-of-war/graphs/contributors)
-[![GitHub commit activity the past year](https://img.shields.io/github/commit-activity/y/BSData/the-9th-age-essence-of-war.svg?style=flat-square)](https://github.com/BSData/the-9th-age-essence-of-war/pulse/monthly)
+Army list data files for T9A: Essence of War.
 
-# Overview #
-[Overview]: #overview
-This is the supported repo for The 9th Age: __Essence of War__ Battlescribe files. Please see [The 9th Age github repo](https://github.com/BSData/The-9th-Age) for The 9th Age: __Fantasy Battles__ battlescribe files
+> **Community rehost.** These files were written by the community contributors listed below and were previously published at `github.com/BSData/the-9th-age-essence-of-war`, which is no longer online. This copy keeps them available and open to updates.
+>
+> They are not made, maintained or endorsed by NewRecruit. Nobody here is affiliated with or endorsed by the publisher of T9A: Essence of War. All game names and trademarks belong to their respective owners. You still need the official rules to play.
 
-## How to: Stable Release ##
+## Is this maintained?
 
-1. Open Battlescribe and go to Manage Data
-2. Click the plus sign or add Data Source (Not "Add data index url"!)
-3. Select __"The 9th Age: Essence of War"__
-4. And you should be good to go once the data files have been updated.
+It is open for updates, not archived. It is kept up by whoever contributes to it, so check the commit history to see how current it is. Last data change before the rehost: 2023-12-14.
 
-## How to: Nightlies ##
+## How to update it
 
-If you can't wait for latest fixes to be proper released, then you can add the data url directly to get nightly updates. Please mind that this can contain breaking changes without warning! So use at your own risk :-)
+- **Pull request:** fork this repository, make your changes and open a pull request.
+- **Write access:** if you want to maintain this game, ask on the NewRecruit Discord: https://discord.gg/cCtqGbugwb
 
-1. Open Battlescribe and go to Manage Data
-2. Select "Add data index url"
-3. Enter: https://github.com/BSData/the-9th-age-essence-of-war/raw/main/index.bsi as repository URL (Copy the url for easier pasting)
-4. Make sure to "Update Data"
-5. And you should be good to go once the data files have been updated.
+## File format
 
-__Please mind that this can cause unexpected issues if you have the official data source from appspot as well!__
+The files are JSON, converted on 2026-11-16 from the original BattleScribe XML (`.cat`/`.gst`). The XML versions are in the git history before that commit.
+
+## Authors
+
+From the git history of the data files:
+
+- rzmoz
+- Idum
